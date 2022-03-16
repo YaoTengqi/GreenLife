@@ -1,0 +1,9 @@
+CMake Error at D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:165 (message):
+  Could NOT find Vulkan (missing: Vulkan_LIBRARY)
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:458 (_FPHSA_FAILURE_MESSAGE)
+  D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/FindVulkan.cmake:77 (find_package_handle_standard_args)
+  armeabi-v7a/lib/cmake/ncnn/ncnnConfig.cmake:18 (find_package)
+  CMakeLists.txt:6 (find_package)
+
+

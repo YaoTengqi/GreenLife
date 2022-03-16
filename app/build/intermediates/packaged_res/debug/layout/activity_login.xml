@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffffff">
+
+    <TextView
+        android:id="@+id/gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="-30dp"
+        android:text="GreenLife"
+        android:textColor="#228B22"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+
+    <Button
+        android:id="@+id/regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_border"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/button_border"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/gl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_border"
+        android:ems="12"
+        android:hint="  id"
+        android:inputType="textPersonName"
+        android:textColorHint="#95A1AA"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_border"
+        android:ems="12"
+        android:hint="  password"
+        android:inputType="textPassword"
+        android:textColorHint="#95A1AA" />
+
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-27dp"
+        android:gravity="top"
+        android:src="@drawable/img"
+        tools:ignore="MissingConstraints"></ImageView>
+</RelativeLayout>

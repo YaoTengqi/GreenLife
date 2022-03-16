@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\layout_item_main.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\item_main.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\drawable_button_border.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\button_border.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\drawable_recycle.png.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\recycle.png"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\layout_activity_details.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_details.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\drawable_button_main_border.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\button_main_border.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\xml_file_paths.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\drawable_img.png.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\img.png"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\layout_activity_main.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\drawable_edittext_border.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\edittext_border.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\drawable_divider.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\divider.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\layout_activity_login.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    }
+]

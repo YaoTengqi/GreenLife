@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\project\\GreenLife\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "D:\\development\\AndroidSDK\\gradle\\caches\\transforms-3\\cf53bd8ec7c668980ed1494d0729c2d3\\transformed\\material-1.4.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 19 min SDK version: armeabi-v7a",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 999259089
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON D:\\project\\GreenLife\\app\\.cxx\\Debug\\1270512f\\armeabi-v7a\\android_gradle_build.json due to:",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1846447997
+  },
+  {
+    "level_": 0,
+    "message_": "- expected json D:\\project\\GreenLife\\app\\.cxx\\Debug\\1270512f\\armeabi-v7a\\android_gradle_build.json file is not present, will remove stale json folder",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 812973729
+  },
+  {
+    "level_": 0,
+    "message_": "- missing previous command file D:\\project\\GreenLife\\app\\.cxx\\Debug\\1270512f\\armeabi-v7a\\metadata_generation_command.txt, will remove stale json folder",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -286162401
+  },
+  {
+    "level_": 0,
+    "message_": "- command changed from previous, will remove stale json folder",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1322521886
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027D:\\project\\GreenLife\\app\\.cxx\\Debug\\1270512f\\armeabi-v7a\u0027",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1438383581
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027D:\\project\\GreenLife\\app\\.cxx\\Debug\\1270512f\\armeabi-v7a\u0027",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 707288145
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake Executable : D:\\development\\AndroidSDK\\cmake\\3.18.1\\bin\\cmake.exe\narguments : \n-HD:\\project\\GreenLife\\app\\src\\main\\jni\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d19\n-DANDROID_PLATFORM\u003dandroid-19\n-DANDROID_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\23.1.7779620\n-DCMAKE_ANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\23.1.7779620\n-DCMAKE_TOOLCHAIN_FILE\u003dD:\\development\\AndroidSDK\\ndk\\23.1.7779620\\build\\cmake\\android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003dD:\\development\\AndroidSDK\\cmake\\3.18.1\\bin\\ninja.exe\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\1270512f\\obj\\armeabi-v7a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\1270512f\\obj\\armeabi-v7a\n-DCMAKE_BUILD_TYPE\u003dDebug\n-BD:\\project\\GreenLife\\app\\.cxx\\Debug\\1270512f\\armeabi-v7a\n-GNinja\njvmArgs : \n\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 69388437
+  },
+  {
+    "level_": 0,
+    "message_": "Executable : D:\\development\\AndroidSDK\\cmake\\3.18.1\\bin\\cmake.exe\narguments : \n-HD:\\project\\GreenLife\\app\\src\\main\\jni\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d19\n-DANDROID_PLATFORM\u003dandroid-19\n-DANDROID_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\23.1.7779620\n-DCMAKE_ANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\23.1.7779620\n-DCMAKE_TOOLCHAIN_FILE\u003dD:\\development\\AndroidSDK\\ndk\\23.1.7779620\\build\\cmake\\android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003dD:\\development\\AndroidSDK\\cmake\\3.18.1\\bin\\ninja.exe\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\1270512f\\obj\\armeabi-v7a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\1270512f\\obj\\armeabi-v7a\n-DCMAKE_BUILD_TYPE\u003dDebug\n-BD:\\project\\GreenLife\\app\\.cxx\\Debug\\1270512f\\armeabi-v7a\n-GNinja\njvmArgs : \n\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -761489738
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed with problem. Exception: Build command failed.\nError while executing process D:\\development\\AndroidSDK\\cmake\\3.18.1\\bin\\cmake.exe with arguments {-HD:\\project\\GreenLife\\app\\src\\main\\jni -DCMAKE_SYSTEM_NAME\u003dAndroid -DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON -DCMAKE_SYSTEM_VERSION\u003d19 -DANDROID_PLATFORM\u003dandroid-19 -DANDROID_ABI\u003darmeabi-v7a -DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a -DANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\23.1.7779620 -DCMAKE_ANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\23.1.7779620 -DCMAKE_TOOLCHAIN_FILE\u003dD:\\development\\AndroidSDK\\ndk\\23.1.7779620\\build\\cmake\\android.toolchain.cmake -DCMAKE_MAKE_PROGRAM\u003dD:\\development\\AndroidSDK\\cmake\\3.18.1\\bin\\ninja.exe -DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\1270512f\\obj\\armeabi-v7a -DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\1270512f\\obj\\armeabi-v7a -DCMAKE_BUILD_TYPE\u003dDebug -BD:\\project\\GreenLife\\app\\.cxx\\Debug\\1270512f\\armeabi-v7a -GNinja}\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Check for working C compiler: D:/development/AndroidSDK/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe - skipped\n-- Detecting C compile features\n-- Detecting C compile features - done\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: D:/development/AndroidSDK/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Found OpenMP_C: -fopenmp\u003dlibomp (found version \"5.0\") \n-- Found OpenMP_CXX: -fopenmp\u003dlibomp (found version \"5.0\") \n-- Found OpenMP: TRUE (found version \"5.0\")  \n-- Looking for pthread.h\n-- Looking for pthread.h - found\n-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n-- Check if compiler accepts -pthread\n-- Check if compiler accepts -pthread - yes\n-- Found Threads: TRUE  \n-- Configuring incomplete, errors occurred!\nSee also \"D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeOutput.log\".\nSee also \"D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeError.log\".\n\nCMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\u0027s built-in compiler identification.\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)\n  D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/CMakeDetermineSystem.cmake:93 (include)\n  CMakeLists.txt:1 (project)\n\n\nCMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\u0027s built-in compiler identification.\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n\nCMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\u0027s built-in compiler identification.\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n\nCMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\u0027s built-in compiler identification.\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n\nCMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\u0027s built-in compiler identification.\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n\nCMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\u0027s built-in compiler identification.\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n\nCMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\u0027s built-in compiler identification.\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n\nCMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\u0027s built-in compiler identification.\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n\nCMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\u0027s built-in compiler identification.\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n\nCMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\u0027s built-in compiler identification.\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)\n  D:/project/GreenLife/app/.cxx/Debug/1270512f/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n\nCMake Error at D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:165 (message):\n  Could NOT find Vulkan (missing: Vulkan_LIBRARY)\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:458 (_FPHSA_FAILURE_MESSAGE)\n  D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/FindVulkan.cmake:77 (find_package_handle_standard_args)\n  armeabi-v7a/lib/cmake/ncnn/ncnnConfig.cmake:18 (find_package)\n  CMakeLists.txt:6 (find_package)\n\n\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1956173991
+  }
+]

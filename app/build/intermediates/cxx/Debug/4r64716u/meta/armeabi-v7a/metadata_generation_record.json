@@ -1,0 +1,1122 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 19 min SDK version: armeabi-v7a",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 571127019
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON D:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\armeabi-v7a\\android_gradle_build.json due to:",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -156494748
+  },
+  {
+    "level_": 0,
+    "message_": "- expected json D:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\armeabi-v7a\\android_gradle_build.json file is not present, will remove stale json folder",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 817395348
+  },
+  {
+    "level_": 0,
+    "message_": "- missing previous command file D:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\armeabi-v7a\\metadata_generation_command.txt, will remove stale json folder",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1490483666
+  },
+  {
+    "level_": 0,
+    "message_": "- command changed from previous, will remove stale json folder",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 894389816
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027D:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\armeabi-v7a\u0027",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -895780016
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027D:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\armeabi-v7a\u0027",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1626875452
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake Executable : D:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\cmake.exe\narguments : \n-HD:\\project\\GreenLife\\app\\src\\main\\jni\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d19\n-DANDROID_PLATFORM\u003dandroid-19\n-DANDROID_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\21.4.7075529\n-DCMAKE_ANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\21.4.7075529\n-DCMAKE_TOOLCHAIN_FILE\u003dD:\\development\\AndroidSDK\\ndk\\21.4.7075529\\build\\cmake\\android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003dD:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\4r64716u\\obj\\armeabi-v7a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\4r64716u\\obj\\armeabi-v7a\n-DCMAKE_BUILD_TYPE\u003dDebug\n-BD:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\armeabi-v7a\n-GNinja\njvmArgs : \n\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 630651620
+  },
+  {
+    "level_": 0,
+    "message_": "\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1348254730
+  },
+  {
+    "level_": 0,
+    "message_": "[\u003d\u003d \"CMake Server\" \u003d\u003d[\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1769596624
+  },
+  {
+    "level_": 0,
+    "message_": "{\"supportedProtocolVersions\":[{\"isExperimental\":true,\"major\":1,\"minor\":1}],\"type\":\"hello\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1054212015
+  },
+  {
+    "level_": 0,
+    "message_": "]\u003d\u003d \"CMake Server\" \u003d\u003d]\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 163428496
+  },
+  {
+    "level_": 0,
+    "message_": "{\n  \"type\": \"handshake\",\n  \"cookie\": \"gradle-cmake-cookie\",\n  \"protocolVersion\": {\n    \"isExperimental\": true,\n    \"major\": 1,\n    \"minor\": 1\n  },\n  \"sourceDirectory\": \"D:/project/GreenLife/app/src/main/jni\",\n  \"buildDirectory\": \"D:/project/GreenLife/app/.cxx/Debug/4r64716u/armeabi-v7a\",\n  \"generator\": \"Ninja\"\n}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1818090867
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"gradle-cmake-cookie\",\"inReplyTo\":\"handshake\",\"type\":\"reply\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -2123295471
+  },
+  {
+    "level_": 0,
+    "message_": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d19\",\n    \"-DANDROID_PLATFORM\\u003dandroid-19\",\n    \"-DANDROID_ABI\\u003darmeabi-v7a\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003darmeabi-v7a\",\n    \"-DANDROID_NDK\\u003dD:\\\\development\\\\AndroidSDK\\\\ndk\\\\21.4.7075529\",\n    \"-DCMAKE_ANDROID_NDK\\u003dD:\\\\development\\\\AndroidSDK\\\\ndk\\\\21.4.7075529\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003dD:\\\\development\\\\AndroidSDK\\\\ndk\\\\21.4.7075529\\\\build\\\\cmake\\\\android.toolchain.cmake\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003dD:\\\\development\\\\AndroidSDK\\\\cmake\\\\3.10.2.4988404\\\\bin\\\\ninja.exe\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003dD:\\\\project\\\\GreenLife\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\4r64716u\\\\obj\\\\armeabi-v7a\",\n    \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\\u003dD:\\\\project\\\\GreenLife\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\4r64716u\\\\obj\\\\armeabi-v7a\",\n    \"-DCMAKE_BUILD_TYPE\\u003dDebug\"\n  ]\n}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 387733037
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1435818558
+  },
+  {
+    "level_": 0,
+    "message_": "Check for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -516549622
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":33,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1997331087
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -436977264
+  },
+  {
+    "level_": 0,
+    "message_": "Check for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1493976840
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1656244887
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting C compiler ABI info",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1120477343
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":65,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -251540156
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1983155528
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting C compiler ABI info - done",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -547427840
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1106755844
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting C compile features",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1675968076
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":96,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1908648590
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":126,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1315505172
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":155,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1072868960
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features - done\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -782290243
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting C compile features - done",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 52362421
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 2038770018
+  },
+  {
+    "level_": 0,
+    "message_": "Check for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 522433450
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":184,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -833724204
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -28028432
+  },
+  {
+    "level_": 0,
+    "message_": "Check for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1058522264
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -755857431
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting CXX compiler ABI info",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -610554911
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":211,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 522936203
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 675729464
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting CXX compiler ABI info - done",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -388821632
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 443063940
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting CXX compile features",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1217076788
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":237,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1354567671
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":262,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -95654721
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":287,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 850069440
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":311,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1745959370
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features - done\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -280877763
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting CXX compile features - done",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1327994571
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":334,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -572049823
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":356,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 715952417
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":377,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 2118047350
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found OpenMP_C: -fopenmp\u003dlibomp (found version \\\"3.1\\\") \",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1302878836
+  },
+  {
+    "level_": 0,
+    "message_": "Found OpenMP_C: -fopenmp\u003dlibomp (found version \"3.1\") ",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -459176500
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":398,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -774825013
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found OpenMP_CXX: -fopenmp\u003dlibomp (found version \\\"3.1\\\") \",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1712229324
+  },
+  {
+    "level_": 0,
+    "message_": "Found OpenMP_CXX: -fopenmp\u003dlibomp (found version \"3.1\") ",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1361829364
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found OpenMP: TRUE (found version \\\"3.1\\\")  \",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1214678716
+  },
+  {
+    "level_": 0,
+    "message_": "Found OpenMP: TRUE (found version \"3.1\")  ",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1407270924
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread.h\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -734768980
+  },
+  {
+    "level_": 0,
+    "message_": "Looking for pthread.h",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -95317468
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":418,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -518536498
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread.h - found\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1153997145
+  },
+  {
+    "level_": 0,
+    "message_": "Looking for pthread.h - found",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1517216865
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread_create\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1107542709
+  },
+  {
+    "level_": 0,
+    "message_": "Looking for pthread_create",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 446807165
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":438,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 997651128
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread_create - found\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1713586256
+  },
+  {
+    "level_": 0,
+    "message_": "Looking for pthread_create - found",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1004657912
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found Threads: TRUE  \",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1872134135
+  },
+  {
+    "level_": 0,
+    "message_": "Found Threads: TRUE  ",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -641854225
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Error at D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:137 (message):\\n  Could NOT find Vulkan (missing: Vulkan_LIBRARY)\\nCall Stack (most recent call first):\\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)\\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindVulkan.cmake:69 (find_package_handle_standard_args)\\n  armeabi-v7a/lib/cmake/ncnn/ncnnConfig.cmake:18 (find_package)\\n  CMakeLists.txt:6 (find_package)\\n\\n\",\"title\":\"Error\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -942843737
+  },
+  {
+    "level_": 3,
+    "message_": "CMake Error at D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:137 (message):\r\n  Could NOT find Vulkan (missing: Vulkan_LIBRARY)\r\nCall Stack (most recent call first):\r\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)\r\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindVulkan.cmake:69 (find_package_handle_standard_args)\r\n  armeabi-v7a/lib/cmake/ncnn/ncnnConfig.cmake:18 (find_package)\r\n  CMakeLists.txt:6 (find_package)\r\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1341935009
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 254840292
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Configuring incomplete, errors occurred!\\nSee also \\\"D:/project/GreenLife/app/.cxx/Debug/4r64716u/armeabi-v7a/CMakeFiles/CMakeOutput.log\\\".\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1966132875
+  },
+  {
+    "level_": 0,
+    "message_": "Configuring incomplete, errors occurred!\r\nSee also \"D:/project/GreenLife/app/.cxx/Debug/4r64716u/armeabi-v7a/CMakeFiles/CMakeOutput.log\".",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1362465164
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"errorMessage\":\"Configuration failed.\",\"inReplyTo\":\"configure\",\"type\":\"error\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1572559364
+  },
+  {
+    "level_": 3,
+    "message_": "Configuration failed.",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -519193970
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed with problem. Exception: com.android.ide.common.process.ProcessException: Error configuring CMake server (D:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin).\r\nCheck for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe\nCheck for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works\nDetecting C compiler ABI info\nDetecting C compiler ABI info - done\nDetecting C compile features\nDetecting C compile features - done\nCheck for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe\nCheck for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works\nDetecting CXX compiler ABI info\nDetecting CXX compiler ABI info - done\nDetecting CXX compile features\nDetecting CXX compile features - done\nFound OpenMP_C: -fopenmp\u003dlibomp (found version \"3.1\") \nFound OpenMP_CXX: -fopenmp\u003dlibomp (found version \"3.1\") \nFound OpenMP: TRUE (found version \"3.1\")  \nLooking for pthread.h\nLooking for pthread.h - found\nLooking for pthread_create\nLooking for pthread_create - found\nFound Threads: TRUE  \nCMake Error at D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:137 (message):\n  Could NOT find Vulkan (missing: Vulkan_LIBRARY)\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindVulkan.cmake:69 (find_package_handle_standard_args)\n  armeabi-v7a/lib/cmake/ncnn/ncnnConfig.cmake:18 (find_package)\n  CMakeLists.txt:6 (find_package)\n\n\nConfiguring incomplete, errors occurred!\nSee also \"D:/project/GreenLife/app/.cxx/Debug/4r64716u/armeabi-v7a/CMakeFiles/CMakeOutput.log\".\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1101968438
+  }
+]

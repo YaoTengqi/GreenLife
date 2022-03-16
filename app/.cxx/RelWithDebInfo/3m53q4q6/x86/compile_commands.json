@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/project/GreenLife/app/.cxx/RelWithDebInfo/3m53q4q6/x86",
+  "command": "D:\\development\\AndroidSDK\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --gcc-toolchain=D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dyolov5ncnn_EXPORTS -isystem D:/project/GreenLife/app/src/main/jni/x86/include/ncnn  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC   -fno-rtti -fno-exceptions -o CMakeFiles\\yolov5ncnn.dir\\yolov5ncnn_jni.cpp.o -c D:\\project\\GreenLife\\app\\src\\main\\jni\\yolov5ncnn_jni.cpp",
+  "file": "D:\\project\\GreenLife\\app\\src\\main\\jni\\yolov5ncnn_jni.cpp"
+}
+]

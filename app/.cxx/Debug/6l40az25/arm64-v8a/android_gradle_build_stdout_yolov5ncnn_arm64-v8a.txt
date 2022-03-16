@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\project\GreenLife\app\.cxx\Debug\6l40az25\arm64-v8a'
+ninja: no work to do.

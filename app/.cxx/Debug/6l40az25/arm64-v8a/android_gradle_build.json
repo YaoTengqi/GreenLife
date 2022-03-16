@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "D:\\project\\GreenLife\\app\\.cxx\\Debug\\6l40az25\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "D:\\project\\GreenLife\\app\\.cxx\\Debug\\6l40az25\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "yolov5ncnn-Debug-arm64-v8a": {
+      "buildCommandComponents": [
+        "D:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "D:\\project\\GreenLife\\app\\.cxx\\Debug\\6l40az25\\arm64-v8a",
+        "yolov5ncnn"
+      ],
+      "buildType": "debug",
+      "abi": "arm64-v8a",
+      "artifactName": "yolov5ncnn",
+      "output": "D:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\6l40az25\\obj\\arm64-v8a\\libyolov5ncnn.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

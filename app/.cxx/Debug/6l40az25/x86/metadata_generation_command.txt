@@ -1,0 +1,23 @@
+                    Executable : D:\development\AndroidSDK\cmake\3.10.2.4988404\bin\cmake.exe
+arguments : 
+-HD:\project\GreenLife\app\src\main\jni
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=24
+-DANDROID_PLATFORM=android-24
+-DANDROID_ABI=x86
+-DCMAKE_ANDROID_ARCH_ABI=x86
+-DANDROID_NDK=D:\development\AndroidSDK\ndk\21.4.7075529
+-DCMAKE_ANDROID_NDK=D:\development\AndroidSDK\ndk\21.4.7075529
+-DCMAKE_TOOLCHAIN_FILE=D:\development\AndroidSDK\ndk\21.4.7075529\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=D:\development\AndroidSDK\cmake\3.10.2.4988404\bin\ninja.exe
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\project\GreenLife\app\build\intermediates\cxx\Debug\6l40az25\obj\x86
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=D:\project\GreenLife\app\build\intermediates\cxx\Debug\6l40az25\obj\x86
+-DCMAKE_BUILD_TYPE=Debug
+-BD:\project\GreenLife\app\.cxx\Debug\6l40az25\x86
+-GNinja
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

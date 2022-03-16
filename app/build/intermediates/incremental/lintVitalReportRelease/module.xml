@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="D:\project\GreenLife\app"
+    name=":app"
+    type="APP"
+    maven="GreenLife:app:"
+    gradle="7.1.1"
+    buildFolder="build"
+    bootClassPath="D:\development\AndroidSDK\platforms\android-32\android.jar;D:\development\AndroidSDK\build-tools\30.0.3\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-32"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

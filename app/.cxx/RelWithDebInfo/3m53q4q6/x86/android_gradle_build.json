@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "D:\\project\\GreenLife\\app\\.cxx\\RelWithDebInfo\\3m53q4q6\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "D:\\project\\GreenLife\\app\\.cxx\\RelWithDebInfo\\3m53q4q6\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "yolov5ncnn-RelWithDebInfo-x86": {
+      "buildCommandComponents": [
+        "D:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "D:\\project\\GreenLife\\app\\.cxx\\RelWithDebInfo\\3m53q4q6\\x86",
+        "yolov5ncnn"
+      ],
+      "buildType": "release",
+      "abi": "x86",
+      "artifactName": "yolov5ncnn",
+      "output": "D:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\3m53q4q6\\obj\\x86\\libyolov5ncnn.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

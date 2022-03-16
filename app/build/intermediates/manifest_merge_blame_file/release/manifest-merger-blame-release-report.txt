@@ -1,0 +1,101 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.greenlife"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\project\GreenLife\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\project\GreenLife\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:7:5-79
+12-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:8:5-81
+13-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:8:22-78
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:9:5-80
+14-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:9:22-77
+15
+16    <application
+16-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:11:5-49:19
+17        android:allowBackup="true"
+17-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:12:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.5.0] D:\development\AndroidSDK\gradle\caches\transforms-3\3097e1c5dd79a0661fe903d2c2778720\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+19        android:extractNativeLibs="false"
+20        android:icon="@mipmap/ic_launcher"
+20-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:13:9-43
+21        android:label="@string/app_name"
+21-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:14:9-41
+22        android:requestLegacyExternalStorage="true"
+22-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:15:9-52
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:16:9-54
+24        android:supportsRtl="true"
+24-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:17:9-35
+25        android:theme="@style/Theme.GreenLife" >
+25-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:18:9-47
+26        <activity
+26-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:19:9-22:72
+27            android:name="YAO.GreenLife.core.DetailsActivity"
+27-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:20:13-62
+28            android:exported="false"
+28-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:21:13-37
+29            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+29-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:22:13-69
+30        <!-- 为调用相机拍照设置内容提供者 -->
+31        <provider
+31-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:24:9-33:20
+32            android:name="androidx.core.content.FileProvider"
+32-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:25:13-62
+33            android:authorities="com.example.greenlife.fileprovider"
+33-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:26:13-69
+34            android:exported="false"
+34-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:27:13-37
+35            android:grantUriPermissions="true" >
+35-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:28:13-47
+36            <meta-data
+36-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:30:13-32:54
+37                android:name="android.support.FILE_PROVIDER_PATHS"
+37-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:31:17-67
+38                android:resource="@xml/file_paths" />
+38-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:32:17-51
+39        </provider>
+40
+41        <activity
+41-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:35:9-38:72
+42            android:name="YAO.GreenLife.core.MainActivity"
+42-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:36:13-59
+43            android:exported="false"
+43-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:37:13-37
+44            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+44-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:38:13-69
+45        <activity
+45-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:39:9-48:20
+46            android:name="YAO.GreenLife.core.LoginActivity"
+46-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:40:13-60
+47            android:exported="true"
+47-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:41:13-36
+48            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+48-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:42:13-69
+49            <intent-filter>
+49-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:43:13-47:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:44:17-69
+50-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:44:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:46:17-77
+52-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:46:27-74
+53            </intent-filter>
+54        </activity>
+55    </application>
+56
+57</manifest>

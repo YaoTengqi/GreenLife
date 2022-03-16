@@ -1,0 +1,7 @@
+Executable : D:\development\AndroidSDK\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+D:\project\GreenLife\app\.cxx\RelWithDebInfo\3m53q4q6\x86
+yolov5ncnn
+jvmArgs : 
+

@@ -1,0 +1,119 @@
+CMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/CMakeDetermineSystem.cmake:93 (include)
+  CMakeLists.txt:1 (project)
+
+
+CMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/3.18.1-g262b901-dirty/CMakeSystem.cmake:6 (include)
+  D:/project/GreenLife/app/.cxx/Debug/1270512f/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Error at D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:165 (message):
+  Could NOT find Vulkan (missing: Vulkan_LIBRARY)
+Call Stack (most recent call first):
+  D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:458 (_FPHSA_FAILURE_MESSAGE)
+  D:/development/AndroidSDK/cmake/3.18.1/share/cmake-3.18/Modules/FindVulkan.cmake:77 (find_package_handle_standard_args)
+  x86/lib/cmake/ncnn/ncnnConfig.cmake:18 (find_package)
+  CMakeLists.txt:6 (find_package)
+
+

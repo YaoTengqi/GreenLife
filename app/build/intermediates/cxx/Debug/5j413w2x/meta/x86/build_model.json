@@ -1,0 +1,165 @@
+{
+  "abi": "X86",
+  "info": {
+    "abi": "X86",
+    "bitness": 32,
+    "deprecated": false,
+    "default": true
+  },
+  "cxxBuildFolder": "D:\\project\\GreenLife\\app\\.cxx\\Debug\\5j413w2x\\x86",
+  "soFolder": "D:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\5j413w2x\\obj\\x86",
+  "soRepublishFolder": "D:\\project\\GreenLife\\app\\build\\intermediates\\cmake\\debug\\obj\\x86",
+  "abiPlatformVersion": 19,
+  "cmake": {
+    "effectiveConfiguration": {
+      "inheritEnvironments": [],
+      "variables": []
+    }
+  },
+  "variant": {
+    "buildSystemArgumentList": [],
+    "cFlagsList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "D:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\5j413w2x\\obj",
+    "soRepublishFolder": "D:\\project\\GreenLife\\app\\build\\intermediates\\cmake\\debug\\obj",
+    "cxxBuildFolder": "D:\\project\\GreenLife\\app\\.cxx\\Debug\\5j413w2x",
+    "intermediatesFolder": "D:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\5j413w2x",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86"
+    ],
+    "buildTargetSet": [],
+    "implicitBuildTargetSet": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "module": {
+      "cxxFolder": "D:\\project\\GreenLife\\app\\.cxx",
+      "intermediatesBaseFolder": "D:\\project\\GreenLife\\app\\build\\intermediates",
+      "intermediatesFolder": "D:\\project\\GreenLife\\app\\build\\intermediates\\cxx",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "D:\\project\\GreenLife\\app",
+      "moduleBuildFile": "D:\\project\\GreenLife\\app\\build.gradle",
+      "makeFile": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "ndkFolder": "D:\\development\\AndroidSDK\\ndk\\21.4.7075529",
+      "ndkVersion": "21.4.7075529",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
+      "ndkMetaPlatforms": {
+        "min": 16,
+        "max": 30,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29,
+          "R": 30
+        }
+      },
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "cmakeToolchainFile": "D:\\development\\AndroidSDK\\ndk\\21.4.7075529\\build\\cmake\\android.toolchain.cmake",
+      "cmake": {
+        "isValidCmakeAvailable": true,
+        "cmakeExe": "D:\\development\\AndroidSDK\\cmake\\3.18.1\\bin\\cmake.exe",
+        "minimumCmakeVersion": "3.18.1",
+        "ninjaExe": "D:\\development\\AndroidSDK\\cmake\\3.18.1\\bin\\ninja.exe"
+      },
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "D:\\development\\AndroidSDK\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
+          "ARM64_V8A": "D:\\development\\AndroidSDK\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+          "X86": "D:\\development\\AndroidSDK\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
+          "X86_64": "D:\\development\\AndroidSDK\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      },
+      "project": {
+        "rootBuildGradleFolder": "D:\\project\\GreenLife",
+        "sdkFolder": "D:\\development\\AndroidSDK",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isPrefabEnabled": false
+      },
+      "outputOptions": []
+    },
+    "prefabClassPathFileCollection": [],
+    "prefabPackageDirectoryListFileCollection": [],
+    "stlType": "c++_static",
+    "optimizationTag": "Debug"
+  },
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "prefabFolder": "D:\\project\\GreenLife\\app\\.cxx\\Debug\\5j413w2x\\prefab\\x86",
+  "isActiveAbi": true,
+  "fullConfigurationHash": "5j413w2x2ist3652w6d1r5151330143t4h626xa6l4s4i186o595t224j1w",
+  "configurationArguments": [
+    "-HD:\\project\\GreenLife\\app\\src\\main\\jni",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_SYSTEM_VERSION\u003d19",
+    "-DANDROID_PLATFORM\u003dandroid-19",
+    "-DANDROID_ABI\u003dx86",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003dx86",
+    "-DANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\21.4.7075529",
+    "-DCMAKE_ANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\21.4.7075529",
+    "-DCMAKE_TOOLCHAIN_FILE\u003dD:\\development\\AndroidSDK\\ndk\\21.4.7075529\\build\\cmake\\android.toolchain.cmake",
+    "-DCMAKE_MAKE_PROGRAM\u003dD:\\development\\AndroidSDK\\cmake\\3.18.1\\bin\\ninja.exe",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\5j413w2x\\obj\\x86",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\5j413w2x\\obj\\x86",
+    "-DCMAKE_BUILD_TYPE\u003dDebug",
+    "-BD:\\project\\GreenLife\\app\\.cxx\\Debug\\5j413w2x\\x86",
+    "-GNinja"
+  ]
+}

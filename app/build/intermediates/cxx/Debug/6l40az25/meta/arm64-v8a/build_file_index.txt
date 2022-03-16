@@ -1,0 +1,1 @@
+D:\project\GreenLife\app\src\main\jni\CMakeLists.txt

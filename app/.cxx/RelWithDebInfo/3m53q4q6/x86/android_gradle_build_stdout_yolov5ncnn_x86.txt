@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\project\GreenLife\app\.cxx\RelWithDebInfo\3m53q4q6\x86'
+ninja: no work to do.

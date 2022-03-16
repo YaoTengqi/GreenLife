@@ -1,0 +1,1122 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 19 min SDK version: x86",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -375483053
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON D:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\x86\\android_gradle_build.json due to:",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 147203532
+  },
+  {
+    "level_": 0,
+    "message_": "- expected json D:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\x86\\android_gradle_build.json file is not present, will remove stale json folder",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 586277844
+  },
+  {
+    "level_": 0,
+    "message_": "- missing previous command file D:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\x86\\metadata_generation_command.txt, will remove stale json folder",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 651064338
+  },
+  {
+    "level_": 0,
+    "message_": "- command changed from previous, will remove stale json folder",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 589395404
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027D:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\x86\u0027",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1197259632
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027D:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\x86\u0027",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -364947708
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake Executable : D:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\cmake.exe\narguments : \n-HD:\\project\\GreenLife\\app\\src\\main\\jni\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d19\n-DANDROID_PLATFORM\u003dandroid-19\n-DANDROID_ABI\u003dx86\n-DCMAKE_ANDROID_ARCH_ABI\u003dx86\n-DANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\21.4.7075529\n-DCMAKE_ANDROID_NDK\u003dD:\\development\\AndroidSDK\\ndk\\21.4.7075529\n-DCMAKE_TOOLCHAIN_FILE\u003dD:\\development\\AndroidSDK\\ndk\\21.4.7075529\\build\\cmake\\android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003dD:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\4r64716u\\obj\\x86\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\4r64716u\\obj\\x86\n-DCMAKE_BUILD_TYPE\u003dDebug\n-BD:\\project\\GreenLife\\app\\.cxx\\Debug\\4r64716u\\x86\n-GNinja\njvmArgs : \n\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1342222812
+  },
+  {
+    "level_": 0,
+    "message_": "\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1653249142
+  },
+  {
+    "level_": 0,
+    "message_": "[\u003d\u003d \"CMake Server\" \u003d\u003d[\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1464602212
+  },
+  {
+    "level_": 0,
+    "message_": "{\"supportedProtocolVersions\":[{\"isExperimental\":true,\"major\":1,\"minor\":1}],\"type\":\"hello\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 749217603
+  },
+  {
+    "level_": 0,
+    "message_": "]\u003d\u003d \"CMake Server\" \u003d\u003d]\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -141565916
+  },
+  {
+    "level_": 0,
+    "message_": "{\n  \"type\": \"handshake\",\n  \"cookie\": \"gradle-cmake-cookie\",\n  \"protocolVersion\": {\n    \"isExperimental\": true,\n    \"major\": 1,\n    \"minor\": 1\n  },\n  \"sourceDirectory\": \"D:/project/GreenLife/app/src/main/jni\",\n  \"buildDirectory\": \"D:/project/GreenLife/app/.cxx/Debug/4r64716u/x86\",\n  \"generator\": \"Ninja\"\n}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 749263835
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"gradle-cmake-cookie\",\"inReplyTo\":\"handshake\",\"type\":\"reply\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1866677413
+  },
+  {
+    "level_": 0,
+    "message_": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d19\",\n    \"-DANDROID_PLATFORM\\u003dandroid-19\",\n    \"-DANDROID_ABI\\u003dx86\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003dx86\",\n    \"-DANDROID_NDK\\u003dD:\\\\development\\\\AndroidSDK\\\\ndk\\\\21.4.7075529\",\n    \"-DCMAKE_ANDROID_NDK\\u003dD:\\\\development\\\\AndroidSDK\\\\ndk\\\\21.4.7075529\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003dD:\\\\development\\\\AndroidSDK\\\\ndk\\\\21.4.7075529\\\\build\\\\cmake\\\\android.toolchain.cmake\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003dD:\\\\development\\\\AndroidSDK\\\\cmake\\\\3.10.2.4988404\\\\bin\\\\ninja.exe\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003dD:\\\\project\\\\GreenLife\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\4r64716u\\\\obj\\\\x86\",\n    \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\\u003dD:\\\\project\\\\GreenLife\\\\app\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\4r64716u\\\\obj\\\\x86\",\n    \"-DCMAKE_BUILD_TYPE\\u003dDebug\"\n  ]\n}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1270866239
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1740812970
+  },
+  {
+    "level_": 0,
+    "message_": "Check for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -821544034
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":33,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1692336675
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -741971676
+  },
+  {
+    "level_": 0,
+    "message_": "Check for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1188982428
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1961239299
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting C compiler ABI info",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1425471755
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":65,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -556534568
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 2006817356
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting C compiler ABI info - done",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -852422252
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 801761432
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting C compile features",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1370973664
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":96,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1603654178
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":126,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1620499584
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":155,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 767874548
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features - done\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1087284655
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting C compile features - done",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -252631991
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1733775606
+  },
+  {
+    "level_": 0,
+    "message_": "Check for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 217439038
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":184,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1138718616
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -333022844
+  },
+  {
+    "level_": 0,
+    "message_": "Check for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1363516676
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1060851843
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting CXX compiler ABI info",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -915549323
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":211,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 217941791
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 370735052
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting CXX compiler ABI info - done",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -693816044
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 138069528
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting CXX compile features",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1522071200
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":237,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1049573259
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":262,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -400649133
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":287,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 545075028
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":311,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -2050953782
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features - done\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -585872175
+  },
+  {
+    "level_": 0,
+    "message_": "Detecting CXX compile features - done",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1632988983
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":334,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -877044235
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":356,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 410958005
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":377,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1813052938
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found OpenMP_C: -fopenmp\u003dlibomp (found version \\\"3.1\\\") \",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1607873248
+  },
+  {
+    "level_": 0,
+    "message_": "Found OpenMP_C: -fopenmp\u003dlibomp (found version \"3.1\") ",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -764170912
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":398,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1079819425
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found OpenMP_CXX: -fopenmp\u003dlibomp (found version \\\"3.1\\\") \",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1407234912
+  },
+  {
+    "level_": 0,
+    "message_": "Found OpenMP_CXX: -fopenmp\u003dlibomp (found version \"3.1\") ",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1666823776
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found OpenMP: TRUE (found version \\\"3.1\\\")  \",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 909684304
+  },
+  {
+    "level_": 0,
+    "message_": "Found OpenMP: TRUE (found version \"3.1\")  ",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1102276512
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread.h\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1039763392
+  },
+  {
+    "level_": 0,
+    "message_": "Looking for pthread.h",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -400311880
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":418,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -823530910
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread.h - found\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1458991557
+  },
+  {
+    "level_": 0,
+    "message_": "Looking for pthread.h - found",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1822211277
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread_create\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 802548297
+  },
+  {
+    "level_": 0,
+    "message_": "Looking for pthread_create",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 141812753
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":438,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 692656716
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread_create - found\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -2018580668
+  },
+  {
+    "level_": 0,
+    "message_": "Looking for pthread_create - found",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 699663500
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found Threads: TRUE  \",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1567139723
+  },
+  {
+    "level_": 0,
+    "message_": "Found Threads: TRUE  ",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -946848637
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Error at D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:137 (message):\\n  Could NOT find Vulkan (missing: Vulkan_LIBRARY)\\nCall Stack (most recent call first):\\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)\\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindVulkan.cmake:69 (find_package_handle_standard_args)\\n  x86/lib/cmake/ncnn/ncnnConfig.cmake:18 (find_package)\\n  CMakeLists.txt:6 (find_package)\\n\\n\",\"title\":\"Error\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1951930393
+  },
+  {
+    "level_": 3,
+    "message_": "CMake Error at D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:137 (message):\r\n  Could NOT find Vulkan (missing: Vulkan_LIBRARY)\r\nCall Stack (most recent call first):\r\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)\r\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindVulkan.cmake:69 (find_package_handle_standard_args)\r\n  x86/lib/cmake/ncnn/ncnnConfig.cmake:18 (find_package)\r\n  CMakeLists.txt:6 (find_package)\r\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -2051316833
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -50154120
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Configuring incomplete, errors occurred!\\nSee also \\\"D:/project/GreenLife/app/.cxx/Debug/4r64716u/x86/CMakeFiles/CMakeOutput.log\\\".\",\"type\":\"message\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -831406883
+  },
+  {
+    "level_": 0,
+    "message_": "Configuring incomplete, errors occurred!\r\nSee also \"D:/project/GreenLife/app/.cxx/Debug/4r64716u/x86/CMakeFiles/CMakeOutput.log\".",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 783704756
+  },
+  {
+    "level_": 0,
+    "message_": "{\"cookie\":\"\",\"errorMessage\":\"Configuration failed.\",\"inReplyTo\":\"configure\",\"type\":\"error\"}\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1877553776
+  },
+  {
+    "level_": 3,
+    "message_": "Configuration failed.",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -824188382
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed with problem. Exception: com.android.ide.common.process.ProcessException: Error configuring CMake server (D:\\development\\AndroidSDK\\cmake\\3.10.2.4988404\\bin).\r\nCheck for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe\nCheck for working C compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works\nDetecting C compiler ABI info\nDetecting C compiler ABI info - done\nDetecting C compile features\nDetecting C compile features - done\nCheck for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe\nCheck for working CXX compiler: D:/development/AndroidSDK/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works\nDetecting CXX compiler ABI info\nDetecting CXX compiler ABI info - done\nDetecting CXX compile features\nDetecting CXX compile features - done\nFound OpenMP_C: -fopenmp\u003dlibomp (found version \"3.1\") \nFound OpenMP_CXX: -fopenmp\u003dlibomp (found version \"3.1\") \nFound OpenMP: TRUE (found version \"3.1\")  \nLooking for pthread.h\nLooking for pthread.h - found\nLooking for pthread_create\nLooking for pthread_create - found\nFound Threads: TRUE  \nCMake Error at D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:137 (message):\n  Could NOT find Vulkan (missing: Vulkan_LIBRARY)\nCall Stack (most recent call first):\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)\n  D:/development/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindVulkan.cmake:69 (find_package_handle_standard_args)\n  x86/lib/cmake/ncnn/ncnnConfig.cmake:18 (find_package)\n  CMakeLists.txt:6 (find_package)\n\n\nConfiguring incomplete, errors occurred!\nSee also \"D:/project/GreenLife/app/.cxx/Debug/4r64716u/x86/CMakeFiles/CMakeOutput.log\".\n",
+    "file_": "D:\\project\\GreenLife\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 768810246
+  }
+]
