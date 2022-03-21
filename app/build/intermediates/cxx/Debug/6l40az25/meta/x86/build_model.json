@@ -27,6 +27,8 @@
     "intermediatesFolder": "D:\\project\\GreenLife\\app\\build\\intermediates\\cxx\\Debug\\6l40az25",
     "isDebuggableEnabled": true,
     "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
       "X86"
     ],
     "buildTargetSet": [],
@@ -126,7 +128,6 @@
         "rootBuildGradleFolder": "D:\\project\\GreenLife",
         "sdkFolder": "D:\\development\\AndroidSDK",
         "isBuildOnlyTargetAbiEnabled": true,
-        "ideBuildTargetAbi": "x86",
         "isCmakeBuildCohabitationEnabled": false,
         "isPrefabEnabled": false
       },

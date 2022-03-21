@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/garbage_identify"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_border_identify"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/post_img_garbage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/dustbin"
+            android:textSize="20dp"></ImageView>
+
+
+        <Button
+            android:id="@+id/garbage_btn"
+            android:layout_width="196dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/button_identify"
+
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="垃圾分类"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"></Button>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/insect_identify"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_border_identify"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/post_img_insect"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/insect"
+            android:textSize="20dp"></ImageView>
+
+
+        <Button
+            android:id="@+id/insect_btn"
+            android:layout_width="196dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/button_identify"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="昆虫识别"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/check_identify"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_border_identify"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/post_img_check"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/check"
+            android:textSize="20dp"></ImageView>
+
+
+        <Button
+            android:id="@+id/check_btn"
+            android:layout_width="196dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/button_identify"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="查看结果"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"></Button>
+
+    </LinearLayout>
+</LinearLayout>

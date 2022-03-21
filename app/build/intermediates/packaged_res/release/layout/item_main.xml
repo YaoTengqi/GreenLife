@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edittext_border"
+        android:background="@drawable/edittext_border_tips"
         android:elevation="10dp"
         android:orientation="horizontal">
 

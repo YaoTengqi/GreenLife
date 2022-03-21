@@ -1,49 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    tools:context="YAO.GreenLife.core.MainActivity">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linear"
-        >
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:backgroundTint="#228B22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/hole_rv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"></androidx.recyclerview.widget.RecyclerView>
-    </androidx.cardview.widget.CardView>
 
-    <LinearLayout
-        android:id="@+id/linear"
+    <FrameLayout
+        android:id="@+id/main_body"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/take_photo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:background="@drawable/button_main_border"
-            android:text="camera"
-            android:textColor="#ffffff"></Button>
-
-        <Button
-            android:id="@+id/check"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:background="@drawable/button_main_border"
-            android:text="check"
-            android:textColor="#ffffff"></Button>
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:background="@android:color/white"></FrameLayout>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

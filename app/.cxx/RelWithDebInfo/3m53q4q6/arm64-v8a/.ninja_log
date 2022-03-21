@@ -1,3 +1,5 @@
 # ninja log v5
 1	998	669126140	CMakeFiles/yolov5ncnn.dir/yolov5ncnn_jni.cpp.o	901aaaad3c137e39
 999	1616	669126141	D:/project/GreenLife/app/build/intermediates/cxx/RelWithDebInfo/3m53q4q6/obj/arm64-v8a/libyolov5ncnn.so	df5f9c835313f198
+10	1668	669140690	CMakeFiles/yolov5ncnn.dir/yolov5ncnn_jni.cpp.o	901aaaad3c137e39
+1668	2464	669140691	D:/project/GreenLife/app/build/intermediates/cxx/RelWithDebInfo/3m53q4q6/obj/arm64-v8a/libyolov5ncnn.so	df5f9c835313f198
