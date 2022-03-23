@@ -100,6 +100,10 @@
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
     },
     {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\drawable_please_upload_image.png.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\please_upload_image.png"
+    },
+    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },

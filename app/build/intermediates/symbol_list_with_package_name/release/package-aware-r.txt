@@ -1793,6 +1793,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable please_upload_image
 drawable recycle
 drawable side_nav_bar
 drawable test_custom_background
@@ -1936,6 +1937,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id details_iv
+id details_rv
 id details_tv
 id dialog_button
 id dimensions
