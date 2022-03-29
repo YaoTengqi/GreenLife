@@ -115,7 +115,7 @@ public class DetailsActivity extends AppCompatActivity {
                 bitmap = yourSelectedImage;
                 // loading serialized torchscript module from packaged into app android asset model.pt,
                 // app/src/model/assets/model.pt
-                module = LiteModuleLoader.load(assetFilePath(this, "MobileNet.ptl"));
+                module = LiteModuleLoader.load(assetFilePath(this, "328.ptl"));
             } catch (IOException e) {
                 Log.e("PytorchHelloWorld", "Error reading assets", e);
                 finish();
