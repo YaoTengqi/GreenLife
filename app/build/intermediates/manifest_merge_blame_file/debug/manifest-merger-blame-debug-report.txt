@@ -34,8 +34,8 @@
 19-->[androidx.core:core:1.5.0] D:\development\AndroidSDK\gradle\caches\transforms-3\3097e1c5dd79a0661fe903d2c2778720\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:extractNativeLibs="false"
-22        android:icon="@mipmap/ic_launcher"
-22-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:14:9-43
+22        android:icon="@mipmap/icon"
+22-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:14:9-36
 23        android:label="@string/app_name"
 23-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:15:9-41
 24        android:requestLegacyExternalStorage="true"

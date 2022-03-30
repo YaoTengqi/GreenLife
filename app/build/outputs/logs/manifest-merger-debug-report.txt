@@ -115,7 +115,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\developm
 	android:roundIcon
 		ADDED from D:\project\GreenLife\app\src\main\AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from D:\project\GreenLife\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from D:\project\GreenLife\app\src\main\AndroidManifest.xml:14:9-36
 	android:allowBackup
 		ADDED from D:\project\GreenLife\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme

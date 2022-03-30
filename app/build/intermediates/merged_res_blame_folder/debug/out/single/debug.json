@@ -172,6 +172,10 @@
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_icon.png.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_main.xml"
     }

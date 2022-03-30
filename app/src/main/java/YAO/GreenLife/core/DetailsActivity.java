@@ -149,7 +149,19 @@ public class DetailsActivity extends AppCompatActivity {
 
             // showing className on UI
             textView = findViewById(R.id.details_tv);
-            textView.setText(className);
+//            textView.setText(className);
+
+            post post_identify = new post();
+            int position = 0;
+            for (int i = 0; i < 22; i++) {
+                if (className == ImageNetClasses.IMAGENET_CLASSES[i]) {
+                    position = i;
+                }
+            }
+            post_identify.post_img = bitmap;
+            post_identify.post_context = ImageNetClasses.IMAGENET_CLASSES_INTRODUCTION[position];
+            post_identify.post_title = className;
+            post_list.add(post_identify);
 
 
             cache_image = bitmap;
