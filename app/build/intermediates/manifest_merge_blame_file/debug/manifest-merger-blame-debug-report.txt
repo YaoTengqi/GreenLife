@@ -27,7 +27,7 @@
 15-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:10:22-75
 16
 17    <application
-17-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:12:5-51:19
+17-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:12:5-52:19
 18        android:allowBackup="true"
 18-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:13:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -45,61 +45,63 @@
 26        android:supportsRtl="true"
 26-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:18:9-35
 27        android:testOnly="true"
-28        android:theme="@style/Theme.GreenLife" >
+28        android:theme="@style/Theme.GreenLife"
 28-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:19:9-47
-29        <activity
-29-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:21:9-24:72
-30            android:name="YAO.GreenLife.core.DetailsActivity"
-30-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:22:13-62
-31            android:exported="false"
-31-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:23:13-37
-32            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- 为调用相机拍照设置内容提供者 -->
-32-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:24:13-69
-33        <provider
-33-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:25:9-34:20
-34            android:name="androidx.core.content.FileProvider"
-34-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:26:13-62
-35            android:authorities="com.example.greenlife.fileprovider"
-35-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:27:13-69
-36            android:exported="false"
-36-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:28:13-37
-37            android:grantUriPermissions="true" >
-37-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:29:13-47
-38            <meta-data
-38-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:31:13-33:54
-39                android:name="android.support.FILE_PROVIDER_PATHS"
-39-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:32:17-67
-40                android:resource="@xml/file_paths" />
-40-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:33:17-51
-41        </provider>
-42
-43        <activity
-43-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:36:9-40:48
-44            android:name="YAO.GreenLife.core.MainActivity"
-44-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:37:13-59
-45            android:exported="false"
-45-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:38:13-37
-46            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-46-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:39:13-69
-47        <activity
-47-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:41:9-50:20
-48            android:name="YAO.GreenLife.core.LoginActivity"
-48-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:42:13-60
-49            android:exported="true"
-49-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:43:13-36
-50            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-50-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:44:13-69
-51            <intent-filter>
-51-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:45:13-49:29
-52                <action android:name="android.intent.action.MAIN" />
-52-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:46:17-69
-52-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:46:25-66
-53
-54                <category android:name="android.intent.category.LAUNCHER" />
-54-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:48:17-77
-54-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:48:27-74
-55            </intent-filter>
-56        </activity>
-57    </application>
-58
-59</manifest>
+29        android:usesCleartextTraffic="true" >
+29-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:20:9-44
+30        <activity
+30-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:22:9-25:72
+31            android:name="YAO.GreenLife.core.DetailsActivity"
+31-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:23:13-62
+32            android:exported="false"
+32-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:24:13-37
+33            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- 为调用相机拍照设置内容提供者 -->
+33-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:25:13-69
+34        <provider
+34-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:26:9-35:20
+35            android:name="androidx.core.content.FileProvider"
+35-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:27:13-62
+36            android:authorities="com.example.greenlife.fileprovider"
+36-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:28:13-69
+37            android:exported="false"
+37-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:29:13-37
+38            android:grantUriPermissions="true" >
+38-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:30:13-47
+39            <meta-data
+39-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:32:13-34:54
+40                android:name="android.support.FILE_PROVIDER_PATHS"
+40-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:33:17-67
+41                android:resource="@xml/file_paths" />
+41-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:34:17-51
+42        </provider>
+43
+44        <activity
+44-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:37:9-41:48
+45            android:name="YAO.GreenLife.core.MainActivity"
+45-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:38:13-59
+46            android:exported="false"
+46-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:39:13-37
+47            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+47-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:40:13-69
+48        <activity
+48-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:42:9-51:20
+49            android:name="YAO.GreenLife.core.LoginActivity"
+49-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:43:13-60
+50            android:exported="true"
+50-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:44:13-36
+51            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+51-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:45:13-69
+52            <intent-filter>
+52-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:46:13-50:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:47:17-69
+53-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:47:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:49:17-77
+55-->D:\project\GreenLife\app\src\main\AndroidManifest.xml:49:27-74
+56            </intent-filter>
+57        </activity>
+58    </application>
+59
+60</manifest>

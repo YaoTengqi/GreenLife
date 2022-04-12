@@ -2000,7 +2000,6 @@ id homeAsUp
 id honorRequest
 id icon
 id icon_group
-id id
 id ifRoom
 id ignore
 id ignoreRequest
@@ -2025,6 +2024,8 @@ id linear
 id listMode
 id list_item
 id login
+id logname
+id logpass
 id main_body
 id masked
 id material_clock_display
@@ -2109,7 +2110,6 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
-id password
 id password_toggle
 id path
 id pathRelative

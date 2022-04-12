@@ -25,7 +25,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.GreenLife" >
+        android:theme="@style/Theme.GreenLife"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="YAO.GreenLife.core.DetailsActivity"
             android:exported="false"
