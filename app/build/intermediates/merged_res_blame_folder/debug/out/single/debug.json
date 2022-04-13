@@ -124,6 +124,10 @@
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\item_history.xml"
     },
     {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_regist.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_regist.xml"
+    },
+    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },

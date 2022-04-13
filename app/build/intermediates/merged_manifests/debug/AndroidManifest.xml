@@ -28,6 +28,10 @@
         android:theme="@style/Theme.GreenLife"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="YAO.GreenLife.core.RegistActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name="YAO.GreenLife.core.DetailsActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- 为调用相机拍照设置内容提供者 -->

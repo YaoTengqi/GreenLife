@@ -19,7 +19,6 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import YAO.GreenLife.Utils.HttpUtils;
-import okhttp3.Call;
 import okhttp3.FormBody;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
@@ -35,7 +34,6 @@ public class LoginActivity extends AppCompatActivity {
 
     Request request = new Request.Builder().url(url).build();
 
-    Call call = mOkHttpClient.newCall(request);
 
     String return_code;
 
@@ -45,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Button login_btn = findViewById(R.id.login);
+        Button regist_btn = findViewById(R.id.regist);
 
 
         login_btn.setOnClickListener(new View.OnClickListener() {
@@ -101,15 +100,15 @@ public class LoginActivity extends AppCompatActivity {
 
                             if (return_code.equals("4401")) {
                                 Looper.prepare();
-                                Toast.makeText(LoginActivity.this, "账号或密码不能为空!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "账号或密码不能为空!👀", Toast.LENGTH_SHORT).show();
                                 Looper.loop();
                             } else if (return_code.equals("4402")) {
                                 Looper.prepare();
-                                Toast.makeText(LoginActivity.this, "账号或密码错误,请重新输入!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "账号或密码错误,请重新输入!❌", Toast.LENGTH_SHORT).show();
                                 Looper.loop();
                             } else if (return_code.equals("6666")) {
                                 Looper.prepare();
-                                Toast.makeText(LoginActivity.this, "登陆成功!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "登陆成功!👌", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(intent);
                                 Looper.loop();
@@ -123,6 +122,14 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     }
                 }.start();
+            }
+        });
+
+        regist_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, RegistActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -1866,6 +1866,8 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id active
+id active_code
 id activity_chooser_view_content
 id add
 id alertTitle
@@ -1913,6 +1915,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id collapseActionView
+id commit
 id confirm_button
 id container
 id content
@@ -1958,6 +1961,7 @@ id easeInOut
 id easeOut
 id edit_query
 id elastic
+id email
 id end
 id endToStart
 id end_padder
@@ -2000,6 +2004,7 @@ id homeAsUp
 id honorRequest
 id icon
 id icon_group
+id id
 id ifRoom
 id ignore
 id ignoreRequest
@@ -2082,6 +2087,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id nav_bottom
 id nav_controller_view_tag
 id nav_host_fragment_container
@@ -2110,6 +2116,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id passwd
 id password_toggle
 id path
 id pathRelative
@@ -2330,6 +2337,7 @@ layout abc_tooltip
 layout activity_details
 layout activity_login
 layout activity_main
+layout activity_regist
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
