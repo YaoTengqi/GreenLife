@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     String return_code;
+    public static String logname;
 
 
     @Override
@@ -66,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
                         EditText logname_text = findViewById(R.id.logname);
                         EditText logpass_text = findViewById(R.id.logpass);
 
-                        String logname = logname_text.getText().toString();
+                        logname = logname_text.getText().toString();
                         String logpass = logpass_text.getText().toString();
 
 
@@ -110,6 +111,8 @@ public class LoginActivity extends AppCompatActivity {
                                 Looper.prepare();
                                 Toast.makeText(LoginActivity.this, "登陆成功!👌", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                intent.putExtra("user_id", logname);
+                                sendBroadcast(intent);
                                 startActivity(intent);
                                 Looper.loop();
                             } else {

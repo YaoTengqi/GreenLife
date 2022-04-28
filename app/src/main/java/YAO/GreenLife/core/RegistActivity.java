@@ -29,8 +29,8 @@ public class RegistActivity extends AppCompatActivity {
 
     HttpUtils httpUtil;
 
-    String url_commit = "http://59.110.10.33:9999/regist";//此处改为自己的路径
-    String url_active = "http://59.110.10.33:9999/active";//此处改为自己的路径
+    String url_commit = "http://59.110.10.33:9999/regist";//提交注册的后端路径
+    String url_active = "http://59.110.10.33:9999/active";//激活的后端路径
 
     OkHttpClient mOkHttpClient = new OkHttpClient();
 

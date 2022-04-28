@@ -124,6 +124,14 @@
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\layout_activity_regist.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_regist.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_icon.png.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\release\\layout_fragment_history.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\fragment_history.xml"
     },

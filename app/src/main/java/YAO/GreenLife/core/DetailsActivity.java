@@ -1,6 +1,7 @@
 package YAO.GreenLife.core;
 
 import android.annotation.SuppressLint;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -23,6 +24,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.greenlife.R;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.pytorch.IValue;
 import org.pytorch.LiteModuleLoader;
 import org.pytorch.MemoryFormat;
@@ -30,29 +33,46 @@ import org.pytorch.Module;
 import org.pytorch.Tensor;
 import org.pytorch.torchvision.TensorImageUtils;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 import YAO.GreenLife.adapter.PostAdapter;
 import YAO.GreenLife.bean.post;
+import okhttp3.FormBody;
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 public class DetailsActivity extends AppCompatActivity {
     private Uri imageUri = null;
     private final String filePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + File.separator + "output_image.jpg";
     private ImageView imageView;
     private Bitmap yourSelectedImage = null;
-    List<post> post_list = new ArrayList<>();
-    RecyclerView mRecyclerView;
-    PostAdapter mMyAdapter;
-    Bitmap cache_image = null;
-    String cache_code = null;
+    private List<post> post_list = new ArrayList<>();
+    private RecyclerView mRecyclerView;
+    private PostAdapter mMyAdapter;
+    private Bitmap cache_image = null;
+    private String cache_code = null;
+    private long timecurrentTimeMillis = System.currentTimeMillis();//时间戳工具
+    private SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd/ HH:mm:ss", Locale.getDefault());//格式化时间戳
+    private String result;
+    private String user_id;
 
     private YoloV5Ncnn yolov5ncnn = new YoloV5Ncnn();
+
+
+//    String url_history = "http://59.110.10.33:9999/upload";//发送识别历史的后端路径
+    String url_history = "http://localhost:9999/upload";//发送识别历史的后端路径
 
     @SuppressLint("UseCompatLoadingForDrawables")
     @Override
@@ -64,6 +84,15 @@ public class DetailsActivity extends AppCompatActivity {
 
         imageView = findViewById(R.id.details_iv);
         TextView textView = findViewById(R.id.details_tv);
+
+
+        BroadcastReceiver reciver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                user_id = LoginActivity.logname;
+            }
+
+        };
 
 
         /**
@@ -88,6 +117,8 @@ public class DetailsActivity extends AppCompatActivity {
         //再查看identifyCode,判断用什么算法
         String identifyCode = intent.getStringExtra("identifyCode");
 
+        String current_time = sdf.format(timecurrentTimeMillis);//获取当前时间戳
+
         //当选择的是垃圾分类识别时 ————> 调用YoloV5算法
         if ("garbage".equals(identifyCode)) {
 
@@ -102,10 +133,38 @@ public class DetailsActivity extends AppCompatActivity {
             Log.d("YAO", String.valueOf(objects));
 
             showObjects(objects);
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    //将图片、时间戳、识别结果发送到后台历史数据库中
+                    HttpUrl.Builder httpBuilder = sendHistory(yourSelectedImage, user_id, current_time, result);
+                    try {
+                        Request request = new Request.Builder()
+                                .url(httpBuilder.build())
+                                .method("post", new FormBody.Builder().build())
+                                .build();
+                        OkHttpClient client = new OkHttpClient.Builder()
+                                .readTimeout(20, TimeUnit.SECONDS)
+                                .build();
+                        Response response = client.newCall(request).execute();
+
+                        String result2 = response.body().string();
+                        try {
+                            JSONObject jsonObject = new JSONObject(result2);
+//                return_code = jsonObject.getString("code");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }).start();
         }
 
 
-        //当选择的是昆虫识别时 ————> 调用ResNet18算法
+        //当选择的是昆虫识别时 ————> 调用MobileNetV3算法
         else if ("insect".equals(identifyCode)) {
             Bitmap bitmap = null;
             Module module = null;
@@ -146,6 +205,7 @@ public class DetailsActivity extends AppCompatActivity {
             }
 
             String className = ImageNetClasses.IMAGENET_CLASSES[maxScoreIdx];
+            result = className;
 
             // showing className on UI
             textView = findViewById(R.id.details_tv);
@@ -163,6 +223,34 @@ public class DetailsActivity extends AppCompatActivity {
             post_identify.post_title = className;
             post_list.add(post_identify);
 
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    //将图片、时间戳、识别结果发送到后台历史数据库中
+                    HttpUrl.Builder httpBuilder = sendHistory(yourSelectedImage, user_id, current_time, result);
+                    try {
+                        Request request = new Request.Builder()
+                                .url(httpBuilder.build())
+                                .method("post", new FormBody.Builder().build())
+                                .build();
+                        OkHttpClient client = new OkHttpClient.Builder()
+                                .readTimeout(20, TimeUnit.SECONDS)
+                                .build();
+                        Response response = client.newCall(request).execute();
+
+                        String result2 = response.body().string();
+                        try {
+                            JSONObject jsonObject = new JSONObject(result2);
+//                return_code = jsonObject.getString("code");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }).start();
 
             cache_image = bitmap;
             cache_code = "insect";
@@ -275,6 +363,10 @@ public class DetailsActivity extends AppCompatActivity {
             post_identify.post_img = new_bitmap;
             post_identify.post_context = split[0] + "\n" + "准确率：" + String.format("%.1f", objects[i].prob * 100) + "%";
             post_identify.post_title = split[1];
+            if (i++ < objects.length)
+                result += post_identify.post_title + ",";
+            else
+                result += post_identify.post_title;
             post_list.add(post_identify);
             // draw filled text inside image
             {
@@ -324,6 +416,49 @@ public class DetailsActivity extends AppCompatActivity {
             }
             return file.getAbsolutePath();
         }
+    }
+
+    /**
+     * @Description: 将图片、时间戳、识别结果发送到后台历史数据库中
+     * @Param: [yourSelectedImage, user_id, current_time, result]
+     * @return: void
+     * @Author: YAO
+     * @Date: 2022/4/28
+     */
+    public HttpUrl.Builder sendHistory(Bitmap yourSelectedImage, String user_id, String current_time, String result) {
+        byte[] pic_byte = getBitmapByte(yourSelectedImage);
+        String pic_string = pic_byte.toString();
+
+
+        HttpUrl.Builder httpBuilder = HttpUrl.parse(url_history).newBuilder();
+        httpBuilder.addQueryParameter("uid", "test3333");
+        httpBuilder.addQueryParameter("utime", current_time);
+        httpBuilder.addQueryParameter("ulable", result);
+        httpBuilder.addQueryParameter("pinfo", pic_string);
+
+        return httpBuilder;
+
+    }
+
+
+    /**
+     * @Description: bitmap->byte[]
+     * @Param: [bitmap]
+     * @return: byte[]
+     * @Author: YAO
+     * @Date: 2022/4/28
+     */
+    public static byte[] getBitmapByte(Bitmap bitmap) {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        //参数1转换类型，参数2压缩质量，参数3字节流资源
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
+        try {
+            out.flush();
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return out.toByteArray();
     }
 
 }

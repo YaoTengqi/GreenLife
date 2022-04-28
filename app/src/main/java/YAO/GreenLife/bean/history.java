@@ -7,6 +7,16 @@ public class history {
     public String result;
     public String time;
 
+    public String getAccuracy() {
+        return accuracy;
+    }
+
+    public void setAccuracy(String accuracy) {
+        this.accuracy = accuracy;
+    }
+
+    public String accuracy;
+
     public ImageView getImg() {
         return img;
     }
