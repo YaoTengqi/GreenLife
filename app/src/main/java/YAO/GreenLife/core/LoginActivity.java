@@ -110,10 +110,15 @@ public class LoginActivity extends AppCompatActivity {
                             } else if (return_code.equals("6666")) {
                                 Looper.prepare();
                                 Toast.makeText(LoginActivity.this, "登陆成功!👌", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                intent.putExtra("user_id", logname);
-                                sendBroadcast(intent);
-                                startActivity(intent);
+                                Intent intent_broad = new Intent(LoginActivity.this, MainActivity.class);
+                                intent_broad.putExtra("user_id", logname);
+                                startActivity(intent_broad);
+
+
+//                                Intent intent_jump = new Intent(LoginActivity.this, MainActivity.class);
+//                                startActivity(intent_jump);
+
+
                                 Looper.loop();
                             } else {
                                 Looper.prepare();

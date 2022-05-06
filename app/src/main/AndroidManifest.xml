@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.CAMERA" /> <!-- 读写 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.PERMISSIONS_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -36,6 +37,13 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+        <receiver
+            android:name="YAO.GreenLife.core.DetailsActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="YAO.GreenLife.core.DetailsActivity" />
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name="YAO.GreenLife.core.MainActivity"

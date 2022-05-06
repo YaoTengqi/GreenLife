@@ -1,7 +1,6 @@
 package YAO.GreenLife.core;
 
 import android.annotation.SuppressLint;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -24,6 +23,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.greenlife.R;
 
+import org.apache.commons.httpclient.HttpClient;
+import org.apache.commons.httpclient.HttpException;
+import org.apache.commons.httpclient.methods.PostMethod;
+import org.apache.commons.httpclient.params.HttpMethodParams;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.pytorch.IValue;
@@ -41,11 +44,15 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import YAO.GreenLife.adapter.PostAdapter;
+import YAO.GreenLife.bean.history;
 import YAO.GreenLife.bean.post;
 import okhttp3.FormBody;
 import okhttp3.HttpUrl;
@@ -71,8 +78,8 @@ public class DetailsActivity extends AppCompatActivity {
     private YoloV5Ncnn yolov5ncnn = new YoloV5Ncnn();
 
 
-//    String url_history = "http://59.110.10.33:9999/upload";//发送识别历史的后端路径
-    String url_history = "http://localhost:9999/upload";//发送识别历史的后端路径
+    static String url_history = "http://59.110.10.33:9999/upload";//发送识别历史的后端路径
+//    String url_history = "http://localhost:9999/upload";//发送识别历史的后端路径
 
     @SuppressLint("UseCompatLoadingForDrawables")
     @Override
@@ -80,19 +87,13 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-        Intent intent = getIntent();
 
         imageView = findViewById(R.id.details_iv);
         TextView textView = findViewById(R.id.details_tv);
 
-
-        BroadcastReceiver reciver = new BroadcastReceiver() {
-            @Override
-            public void onReceive(Context context, Intent intent) {
-                user_id = LoginActivity.logname;
-            }
-
-        };
+        Intent intent = getIntent();
+        user_id = intent.getExtras().getString("user_id");
+        Log.d("user_id_details", user_id);
 
 
         /**
@@ -138,27 +139,14 @@ public class DetailsActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     //将图片、时间戳、识别结果发送到后台历史数据库中
-                    HttpUrl.Builder httpBuilder = sendHistory(yourSelectedImage, user_id, current_time, result);
-                    try {
-                        Request request = new Request.Builder()
-                                .url(httpBuilder.build())
-                                .method("post", new FormBody.Builder().build())
-                                .build();
-                        OkHttpClient client = new OkHttpClient.Builder()
-                                .readTimeout(20, TimeUnit.SECONDS)
-                                .build();
-                        Response response = client.newCall(request).execute();
-
-                        String result2 = response.body().string();
-                        try {
-                            JSONObject jsonObject = new JSONObject(result2);
-//                return_code = jsonObject.getString("code");
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    byte[] pic_byte = getBitmapByte(yourSelectedImage);
+                    String pic_str = Base64.getEncoder().encodeToString(pic_byte);
+//                    byte[] pic_byte_after = Base64.getDecoder().decode(pic_str);
+                    history send_history = new history(pic_str, result, current_time, user_id);
+                    Log.d("history_user_id", user_id);
+                    Log.d("pic", result);
+                    String msg = postHttp(send_history);
+                    System.out.println(msg);
                 }
             }).start();
         }
@@ -431,13 +419,56 @@ public class DetailsActivity extends AppCompatActivity {
 
 
         HttpUrl.Builder httpBuilder = HttpUrl.parse(url_history).newBuilder();
-        httpBuilder.addQueryParameter("uid", "test3333");
+        httpBuilder.addQueryParameter("uid", "test6666");
         httpBuilder.addQueryParameter("utime", current_time);
         httpBuilder.addQueryParameter("ulable", result);
         httpBuilder.addQueryParameter("pinfo", pic_string);
 
+
         return httpBuilder;
 
+    }
+
+    public static String postHttp(history send_history) {
+        String body = com.alibaba.fastjson.JSONObject.toJSONString(send_history);
+
+        String msg = null;
+        //构建HttpClient实例
+        HttpClient httpClient = new HttpClient();
+        //设置请求超时时间
+        httpClient.getHttpConnectionManager().getParams().setConnectionTimeout(60000);
+        //设置响应超时时间
+        httpClient.getHttpConnectionManager().getParams().setSoTimeout(60000);
+
+        //构造PostMethod的实例
+        PostMethod postMethod = new PostMethod(url_history);
+        postMethod.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET, "utf-8");
+        Map<String, Object> map = com.alibaba.fastjson.JSONObject.parseObject(body, Map.class);
+        Set<String> set = map.keySet();
+        for (String s : set) {
+            System.out.println(map.get(s).toString());
+            postMethod.addParameter(s, map.get(s).toString());
+        }
+        try {
+            //执行post请求
+            httpClient.executeMethod(postMethod);
+            //可以对响应回来的报文进行处理
+            msg = postMethod.getResponseBodyAsString();
+            System.out.printf(msg);
+        } catch (HttpException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally {
+            //关闭连接释放资源的方法
+            postMethod.releaseConnection();
+            //((SimpleHttpConnectionManager)httpClient.getHttpConnectionManager()).shutdown();
+            httpClient.getHttpConnectionManager().closeIdleConnections(0);
+        }
+
+        return msg;
     }
 
 
