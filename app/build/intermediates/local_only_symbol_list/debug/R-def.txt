@@ -86,6 +86,7 @@ menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap icon
+mipmap img_dustbin
 string action_settings
 string app_name
 string hello_blank_fragment

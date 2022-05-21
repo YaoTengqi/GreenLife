@@ -6,6 +6,9 @@ public class history {
     public String time;
     public String user_id;
 
+    public history() {
+    }
+
     public history(String img_str, String result, String time, String user_id) {
         this.img_str = img_str;
         this.result = result;

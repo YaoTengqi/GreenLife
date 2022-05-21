@@ -45,14 +45,20 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.navigation_dashboard:
                 Bundle bundle = this.getIntent().getExtras();
                 user_id = bundle.getString("user_id");
-                IdentifyFragment fragment = new IdentifyFragment();
+                IdentifyFragment identify_fragment = new IdentifyFragment();
                 bundle = new Bundle();
                 bundle.putString("user_id", user_id);
-                fragment.setArguments(bundle);//数据传递到fragment中
-                fragmentTransaction.replace(R.id.main_body, fragment).commit();
+                identify_fragment.setArguments(bundle);//数据传递到fragment中
+                fragmentTransaction.replace(R.id.main_body, identify_fragment).commit();
                 return true;
             case R.id.navigation_notifications:
-                fragmentTransaction.replace(R.id.main_body, new HistoryFragment()).commit();
+                bundle = this.getIntent().getExtras();
+                user_id = bundle.getString("user_id");
+                HistoryFragment his_fragment = new HistoryFragment();
+                bundle = new Bundle();
+                bundle.putString("user_id", user_id);
+                his_fragment.setArguments(bundle);//数据传递到fragment中
+                fragmentTransaction.replace(R.id.main_body, his_fragment).commit();
                 return true;
         }
         return true;

@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,12 +24,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.greenlife.R;
 
-import org.apache.commons.httpclient.HttpClient;
-import org.apache.commons.httpclient.HttpException;
-import org.apache.commons.httpclient.methods.PostMethod;
-import org.apache.commons.httpclient.params.HttpMethodParams;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.pytorch.IValue;
 import org.pytorch.LiteModuleLoader;
 import org.pytorch.MemoryFormat;
@@ -47,17 +42,15 @@ import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 import YAO.GreenLife.adapter.PostAdapter;
 import YAO.GreenLife.bean.history;
 import YAO.GreenLife.bean.post;
-import okhttp3.FormBody;
 import okhttp3.HttpUrl;
+import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class DetailsActivity extends AppCompatActivity {
@@ -65,6 +58,7 @@ public class DetailsActivity extends AppCompatActivity {
     private final String filePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + File.separator + "output_image.jpg";
     private ImageView imageView;
     private Bitmap yourSelectedImage = null;
+    Bitmap history_bitmap = null;
     private List<post> post_list = new ArrayList<>();
     private RecyclerView mRecyclerView;
     private PostAdapter mMyAdapter;
@@ -133,15 +127,20 @@ public class DetailsActivity extends AppCompatActivity {
 
             Log.d("YAO", String.valueOf(objects));
 
-            showObjects(objects);
+            history_bitmap = showObjects(objects);
 
             new Thread(new Runnable() {
                 @Override
                 public void run() {
+                    Matrix matrix = new Matrix();
+                    matrix.setScale(0.5f, 0.5f);//裁剪图片大小
+                    history_bitmap = Bitmap.createBitmap(history_bitmap, 0, 0, history_bitmap.getWidth(),
+                            history_bitmap.getHeight(), matrix, true);
                     //将图片、时间戳、识别结果发送到后台历史数据库中
-                    byte[] pic_byte = getBitmapByte(yourSelectedImage);
+                    byte[] pic_byte = getBitmapByte(history_bitmap);
                     String pic_str = Base64.getEncoder().encodeToString(pic_byte);
 //                    byte[] pic_byte_after = Base64.getDecoder().decode(pic_str);
+//                    System.out.println(pic_byte_after.length);
                     history send_history = new history(pic_str, result, current_time, user_id);
                     Log.d("history_user_id", user_id);
                     Log.d("pic", result);
@@ -215,28 +214,20 @@ public class DetailsActivity extends AppCompatActivity {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
+                    Matrix matrix = new Matrix();
+                    matrix.setScale(0.5f, 0.5f);//裁剪图片大小
+                    history_bitmap = Bitmap.createBitmap(yourSelectedImage, 0, 0, yourSelectedImage.getWidth(),
+                            yourSelectedImage.getHeight(), matrix, true);
                     //将图片、时间戳、识别结果发送到后台历史数据库中
-                    HttpUrl.Builder httpBuilder = sendHistory(yourSelectedImage, user_id, current_time, result);
-                    try {
-                        Request request = new Request.Builder()
-                                .url(httpBuilder.build())
-                                .method("post", new FormBody.Builder().build())
-                                .build();
-                        OkHttpClient client = new OkHttpClient.Builder()
-                                .readTimeout(20, TimeUnit.SECONDS)
-                                .build();
-                        Response response = client.newCall(request).execute();
-
-                        String result2 = response.body().string();
-                        try {
-                            JSONObject jsonObject = new JSONObject(result2);
-//                return_code = jsonObject.getString("code");
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    byte[] pic_byte = getBitmapByte(yourSelectedImage);
+                    String pic_str = Base64.getEncoder().encodeToString(pic_byte);
+//                    byte[] pic_byte_after = Base64.getDecoder().decode(pic_str);
+//                    System.out.println(pic_byte_after.length);
+                    history send_history = new history(pic_str, result, current_time, user_id);
+                    Log.d("history_user_id", user_id);
+                    Log.d("pic", result);
+                    String msg = postHttp(send_history);
+                    System.out.println(msg);
                 }
             }).start();
 
@@ -293,11 +284,11 @@ public class DetailsActivity extends AppCompatActivity {
      * @Date: 2022/3/18
      */
 
-    private void showObjects(YoloV5Ncnn.Obj[] objects) {
+    private Bitmap showObjects(YoloV5Ncnn.Obj[] objects) {
 
         if (objects == null) {
             imageView.setImageBitmap(yourSelectedImage);
-            return;
+            return yourSelectedImage;
         }
 
         // draw objects on bitmap
@@ -350,11 +341,19 @@ public class DetailsActivity extends AppCompatActivity {
             String[] split = objects[i].label.split(":");
             post_identify.post_img = new_bitmap;
             post_identify.post_context = split[0] + "\n" + "准确率：" + String.format("%.1f", objects[i].prob * 100) + "%";
-            post_identify.post_title = split[1];
-            if (i++ < objects.length)
-                result += post_identify.post_title + ",";
-            else
-                result += post_identify.post_title;
+            post_identify.post_title = split[0];
+            if (i < objects.length - 1) {
+                if (i == 0) {
+                    result = post_identify.post_title + ",";
+                } else {
+                    result += post_identify.post_title + ",";
+                }
+            } else {
+                if (i == 0)
+                    result = post_identify.post_title;
+                else
+                    result += post_identify.post_title;
+            }
             post_list.add(post_identify);
             // draw filled text inside image
             {
@@ -379,6 +378,8 @@ public class DetailsActivity extends AppCompatActivity {
         imageView.setImageBitmap(rgba);
         cache_image = rgba;
         cache_code = "garbage";
+
+        return rgba;
     }
 
 
@@ -430,45 +431,23 @@ public class DetailsActivity extends AppCompatActivity {
     }
 
     public static String postHttp(history send_history) {
+        String responseData = null;
         String body = com.alibaba.fastjson.JSONObject.toJSONString(send_history);
-
-        String msg = null;
-        //构建HttpClient实例
-        HttpClient httpClient = new HttpClient();
-        //设置请求超时时间
-        httpClient.getHttpConnectionManager().getParams().setConnectionTimeout(60000);
-        //设置响应超时时间
-        httpClient.getHttpConnectionManager().getParams().setSoTimeout(60000);
-
-        //构造PostMethod的实例
-        PostMethod postMethod = new PostMethod(url_history);
-        postMethod.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET, "utf-8");
-        Map<String, Object> map = com.alibaba.fastjson.JSONObject.parseObject(body, Map.class);
-        Set<String> set = map.keySet();
-        for (String s : set) {
-            System.out.println(map.get(s).toString());
-            postMethod.addParameter(s, map.get(s).toString());
-        }
+        MediaType type = MediaType.parse("application/json;charset=utf-8");
+        RequestBody RequestBody2 = RequestBody.create(type, body);
         try {
-            //执行post请求
-            httpClient.executeMethod(postMethod);
-            //可以对响应回来的报文进行处理
-            msg = postMethod.getResponseBodyAsString();
-            System.out.printf(msg);
-        } catch (HttpException e) {
-            // TODO Auto-generated catch block
+            OkHttpClient client = new OkHttpClient();
+            Request request = new Request.Builder()
+                    // 指定访问的服务器地址
+                    .url(url_history).post(RequestBody2)
+                    .build();
+            Response response = client.newCall(request).execute();
+            responseData = response.body().string();
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } finally {
-            //关闭连接释放资源的方法
-            postMethod.releaseConnection();
-            //((SimpleHttpConnectionManager)httpClient.getHttpConnectionManager()).shutdown();
-            httpClient.getHttpConnectionManager().closeIdleConnections(0);
         }
 
-        return msg;
+        return responseData;
     }
 
 

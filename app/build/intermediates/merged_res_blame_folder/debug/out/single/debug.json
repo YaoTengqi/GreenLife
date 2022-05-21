@@ -60,6 +60,10 @@
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_details.xml"
     },
     {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_img_dustbin.png.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\img_dustbin.png"
+    },
+    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_check.png.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\check.png"
     },
@@ -90,6 +94,10 @@
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_edittext_border_tips.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\edittext_border_tips.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_icon.jpg.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\icon.jpg"
     },
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -170,10 +178,6 @@
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_icon.png.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
     },
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
