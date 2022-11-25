@@ -12,10 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.greenlife.R;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import YAO.GreenLife.Utils.HttpUtils;
@@ -23,7 +19,6 @@ import okhttp3.FormBody;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
-import okhttp3.Response;
 
 public class LoginActivity extends AppCompatActivity {
     HttpUtils httpUtil;
@@ -72,61 +67,54 @@ public class LoginActivity extends AppCompatActivity {
 
 
                         HttpUrl.Builder httpBuilder = HttpUrl.parse(url).newBuilder();
-                        httpBuilder.addQueryParameter("logname", logname);
-                        httpBuilder.addQueryParameter("logpass", logpass);
+                        httpBuilder.addQueryParameter("logname", logname);//把logname传到后端
+                        httpBuilder.addQueryParameter("logpass", logpass);//把logpass传到后端
 
 
-                        try {
-                            Request request = new Request.Builder()
-                                    .url(httpBuilder.build())
-                                    .method("post", new FormBody.Builder().build())
-                                    .build();
-                            OkHttpClient client = new OkHttpClient.Builder()
-                                    .readTimeout(20, TimeUnit.SECONDS)
-                                    .build();
-                            Response response = client.newCall(request).execute();
+                        Request request = new Request.Builder()
+                                .url(httpBuilder.build())
+                                .method("post", new FormBody.Builder().build())
+                                .build();
+                        OkHttpClient client = new OkHttpClient.Builder()
+                                .readTimeout(20, TimeUnit.SECONDS)
+                                .build();
+//                            Response response = client.newCall(request).execute();
 
-                            String result = response.body().string();
-                            try {
-                                JSONObject jsonObject = new JSONObject(result);
-                                return_code = jsonObject.getString("code");
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
+//                            String result = response.body().string();
+                        //                                JSONObject jsonObject = new JSONObject(result);
+//                                return_code = jsonObject.getString("code");//接收后端传来的返回代码“code”
+                        return_code = "6666";
 
 
-                            if (logname.equals("") && logpass.equals("")) {
-                                return_code = "4401";
-                            }
+                        if (logname.equals("") && logpass.equals("")) {
+                            return_code = "4401";
+                        }
 
-                            if (return_code.equals("4401")) {
-                                Looper.prepare();
-                                Toast.makeText(LoginActivity.this, "账号或密码不能为空!👀", Toast.LENGTH_SHORT).show();
-                                Looper.loop();
-                            } else if (return_code.equals("4402")) {
-                                Looper.prepare();
-                                Toast.makeText(LoginActivity.this, "账号或密码错误,请重新输入!❌", Toast.LENGTH_SHORT).show();
-                                Looper.loop();
-                            } else if (return_code.equals("6666")) {
-                                Looper.prepare();
-                                Toast.makeText(LoginActivity.this, "登陆成功!👌", Toast.LENGTH_SHORT).show();
-                                Intent intent_broad = new Intent(LoginActivity.this, MainActivity.class);
-                                intent_broad.putExtra("user_id", logname);
-                                startActivity(intent_broad);
+                        if (return_code.equals("4401")) {
+                            Looper.prepare();
+                            Toast.makeText(LoginActivity.this, "账号或密码不能为空!👀", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
+                        } else if (return_code.equals("4402")) {
+                            Looper.prepare();
+                            Toast.makeText(LoginActivity.this, "账号或密码错误,请重新输入!❌", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
+                        } else if (return_code.equals("6666")) {
+                            Looper.prepare();
+                            Toast.makeText(LoginActivity.this, "登陆成功!👌", Toast.LENGTH_SHORT).show();
+                            Intent intent_broad = new Intent(LoginActivity.this, MainActivity.class);
+                            intent_broad.putExtra("user_id", logname);
+                            startActivity(intent_broad);
 
 
 //                                Intent intent_jump = new Intent(LoginActivity.this, MainActivity.class);
 //                                startActivity(intent_jump);
 
 
-                                Looper.loop();
-                            } else {
-                                Looper.prepare();
-                                Toast.makeText(LoginActivity.this, "发生系统错误", Toast.LENGTH_SHORT).show();
-                                Looper.loop();
-                            }
-                        } catch (IOException e) {
-                            e.printStackTrace();
+                            Looper.loop();
+                        } else {
+                            Looper.prepare();
+                            Toast.makeText(LoginActivity.this, "发生系统错误", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
                         }
                     }
                 }.start();
