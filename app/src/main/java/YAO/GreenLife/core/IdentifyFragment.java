@@ -40,6 +40,7 @@ public class IdentifyFragment extends Fragment {
     private final String filePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + File.separator + "output_image.jpg";
     String imagePath = null;
     ImageView imageView;
+    String user_id;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,6 +48,10 @@ public class IdentifyFragment extends Fragment {
         super.onCreate(savedInstanceState);
         View view = View.inflate(getActivity(), R.layout.fragment_identify, null);
         imageView = view.findViewById(R.id.details_iv);
+
+        Bundle bundle = this.getArguments();//得到从Activity传来的数据
+        user_id = bundle.getString("user_id");
+        Log.d("user_id_identify", user_id);
 
 
         return view;
@@ -129,6 +134,7 @@ public class IdentifyFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), DetailsActivity.class);
                 intent.putExtra("identifyCode", identifyCode);
                 intent.putExtra("checkCode", "check");
+                intent.putExtra("user_id", user_id);
                 startActivity(intent);
             }
 
@@ -197,6 +203,7 @@ public class IdentifyFragment extends Fragment {
                     intent.putExtra("imgUri", uri.toString());
                     intent.putExtra("identifyCode", identifyCode);
                     intent.putExtra("requestCode", "Album_Photo");
+                    intent.putExtra("user_id", user_id);
                     startActivity(intent);
                 } catch (IOException e) {
                     e.printStackTrace();

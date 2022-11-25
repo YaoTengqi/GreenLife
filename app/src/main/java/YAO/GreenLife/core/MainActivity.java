@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.greenlife.R;
@@ -16,12 +17,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
 
     private BottomNavigationView navigationView;
+    private Fragment myFragment = new IdentifyFragment();
+    private String user_id;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         navigationView = findViewById(R.id.nav_bottom);
         navigationView.setOnNavigationItemSelectedListener(this);
@@ -39,10 +43,22 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 fragmentTransaction.replace(R.id.main_body, new TipsFragment()).commit();
                 return true;
             case R.id.navigation_dashboard:
-                fragmentTransaction.replace(R.id.main_body, new IdentifyFragment()).commit();
+                Bundle bundle = this.getIntent().getExtras();
+                user_id = bundle.getString("user_id");
+                IdentifyFragment identify_fragment = new IdentifyFragment();
+                bundle = new Bundle();
+                bundle.putString("user_id", user_id);
+                identify_fragment.setArguments(bundle);//数据传递到fragment中
+                fragmentTransaction.replace(R.id.main_body, identify_fragment).commit();
                 return true;
             case R.id.navigation_notifications:
-                fragmentTransaction.replace(R.id.main_body, new HistoryFragment()).commit();
+                bundle = this.getIntent().getExtras();
+                user_id = bundle.getString("user_id");
+                HistoryFragment his_fragment = new HistoryFragment();
+                bundle = new Bundle();
+                bundle.putString("user_id", user_id);
+                his_fragment.setArguments(bundle);//数据传递到fragment中
+                fragmentTransaction.replace(R.id.main_body, his_fragment).commit();
                 return true;
         }
         return true;
@@ -53,4 +69,5 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         //getSupportFragmentManager() -> beginTransaction() -> add -> (R.id.main_boy, new Fragment()
         this.getSupportFragmentManager().beginTransaction().add(R.id.main_body, new TipsFragment()).commit();
     }
+
 }

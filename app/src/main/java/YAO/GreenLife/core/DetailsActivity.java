@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
@@ -30,29 +31,49 @@ import org.pytorch.Module;
 import org.pytorch.Tensor;
 import org.pytorch.torchvision.TensorImageUtils;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
+import java.util.Locale;
 
 import YAO.GreenLife.adapter.PostAdapter;
+import YAO.GreenLife.bean.history;
 import YAO.GreenLife.bean.post;
+import okhttp3.HttpUrl;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 public class DetailsActivity extends AppCompatActivity {
     private Uri imageUri = null;
     private final String filePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + File.separator + "output_image.jpg";
     private ImageView imageView;
     private Bitmap yourSelectedImage = null;
-    List<post> post_list = new ArrayList<>();
-    RecyclerView mRecyclerView;
-    PostAdapter mMyAdapter;
-    Bitmap cache_image = null;
-    String cache_code = null;
+    Bitmap history_bitmap = null;
+    private List<post> post_list = new ArrayList<>();
+    private RecyclerView mRecyclerView;
+    private PostAdapter mMyAdapter;
+    private Bitmap cache_image = null;
+    private String cache_code = null;
+    private long timecurrentTimeMillis = System.currentTimeMillis();//时间戳工具
+    private SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd/ HH:mm:ss", Locale.getDefault());//格式化时间戳
+    private String result;
+    private String user_id;
 
     private YoloV5Ncnn yolov5ncnn = new YoloV5Ncnn();
+
+
+    static String url_history = "http://59.110.10.33:9999/upload";//发送识别历史的后端路径
+//    String url_history = "http://localhost:9999/upload";//发送识别历史的后端路径
 
     @SuppressLint("UseCompatLoadingForDrawables")
     @Override
@@ -60,10 +81,13 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-        Intent intent = getIntent();
 
         imageView = findViewById(R.id.details_iv);
         TextView textView = findViewById(R.id.details_tv);
+
+        Intent intent = getIntent();
+        user_id = intent.getExtras().getString("user_id");
+        Log.d("user_id_details", user_id);
 
 
         /**
@@ -88,6 +112,8 @@ public class DetailsActivity extends AppCompatActivity {
         //再查看identifyCode,判断用什么算法
         String identifyCode = intent.getStringExtra("identifyCode");
 
+        String current_time = sdf.format(timecurrentTimeMillis);//获取当前时间戳
+
         //当选择的是垃圾分类识别时 ————> 调用YoloV5算法
         if ("garbage".equals(identifyCode)) {
 
@@ -101,11 +127,31 @@ public class DetailsActivity extends AppCompatActivity {
 
             Log.d("YAO", String.valueOf(objects));
 
-            showObjects(objects);
+            history_bitmap = showObjects(objects);
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    Matrix matrix = new Matrix();
+                    matrix.setScale(0.5f, 0.5f);//裁剪图片大小
+                    history_bitmap = Bitmap.createBitmap(history_bitmap, 0, 0, history_bitmap.getWidth(),
+                            history_bitmap.getHeight(), matrix, true);
+                    //将图片、时间戳、识别结果发送到后台历史数据库中
+                    byte[] pic_byte = getBitmapByte(history_bitmap);
+                    String pic_str = Base64.getEncoder().encodeToString(pic_byte);
+//                    byte[] pic_byte_after = Base64.getDecoder().decode(pic_str);
+//                    System.out.println(pic_byte_after.length);
+                    history send_history = new history(pic_str, result, current_time, user_id);
+                    Log.d("history_user_id", user_id);
+                    Log.d("pic", result);
+                    String msg = postHttp(send_history);
+                    System.out.println(msg);
+                }
+            }).start();
         }
 
 
-        //当选择的是昆虫识别时 ————> 调用ResNet18算法
+        //当选择的是昆虫识别时 ————> 调用MobileNetV3算法
         else if ("insect".equals(identifyCode)) {
             Bitmap bitmap = null;
             Module module = null;
@@ -115,7 +161,7 @@ public class DetailsActivity extends AppCompatActivity {
                 bitmap = yourSelectedImage;
                 // loading serialized torchscript module from packaged into app android asset model.pt,
                 // app/src/model/assets/model.pt
-                module = LiteModuleLoader.load(assetFilePath(this, "model.pt"));
+                module = LiteModuleLoader.load(assetFilePath(this, "328.ptl"));
             } catch (IOException e) {
                 Log.e("PytorchHelloWorld", "Error reading assets", e);
                 finish();
@@ -146,11 +192,44 @@ public class DetailsActivity extends AppCompatActivity {
             }
 
             String className = ImageNetClasses.IMAGENET_CLASSES[maxScoreIdx];
+            result = className;
 
             // showing className on UI
             textView = findViewById(R.id.details_tv);
-            textView.setText(className);
+//            textView.setText(className);
 
+            post post_identify = new post();
+            int position = 0;
+            for (int i = 0; i < 22; i++) {
+                if (className == ImageNetClasses.IMAGENET_CLASSES[i]) {
+                    position = i;
+                }
+            }
+            post_identify.post_img = bitmap;
+            post_identify.post_context = ImageNetClasses.IMAGENET_CLASSES_INTRODUCTION[position];
+            post_identify.post_title = className;
+            post_list.add(post_identify);
+
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    Matrix matrix = new Matrix();
+                    matrix.setScale(0.5f, 0.5f);//裁剪图片大小
+                    history_bitmap = Bitmap.createBitmap(yourSelectedImage, 0, 0, yourSelectedImage.getWidth(),
+                            yourSelectedImage.getHeight(), matrix, true);
+                    //将图片、时间戳、识别结果发送到后台历史数据库中
+                    byte[] pic_byte = getBitmapByte(yourSelectedImage);
+                    String pic_str = Base64.getEncoder().encodeToString(pic_byte);
+//                    byte[] pic_byte_after = Base64.getDecoder().decode(pic_str);
+//                    System.out.println(pic_byte_after.length);
+                    history send_history = new history(pic_str, result, current_time, user_id);
+                    Log.d("history_user_id", user_id);
+                    Log.d("pic", result);
+                    String msg = postHttp(send_history);
+                    System.out.println(msg);
+                }
+            }).start();
 
             cache_image = bitmap;
             cache_code = "insect";
@@ -205,11 +284,11 @@ public class DetailsActivity extends AppCompatActivity {
      * @Date: 2022/3/18
      */
 
-    private void showObjects(YoloV5Ncnn.Obj[] objects) {
+    private Bitmap showObjects(YoloV5Ncnn.Obj[] objects) {
 
         if (objects == null) {
             imageView.setImageBitmap(yourSelectedImage);
-            return;
+            return yourSelectedImage;
         }
 
         // draw objects on bitmap
@@ -262,7 +341,19 @@ public class DetailsActivity extends AppCompatActivity {
             String[] split = objects[i].label.split(":");
             post_identify.post_img = new_bitmap;
             post_identify.post_context = split[0] + "\n" + "准确率：" + String.format("%.1f", objects[i].prob * 100) + "%";
-            post_identify.post_title = split[1];
+            post_identify.post_title = split[0];
+            if (i < objects.length - 1) {
+                if (i == 0) {
+                    result = post_identify.post_title + ",";
+                } else {
+                    result += post_identify.post_title + ",";
+                }
+            } else {
+                if (i == 0)
+                    result = post_identify.post_title;
+                else
+                    result += post_identify.post_title;
+            }
             post_list.add(post_identify);
             // draw filled text inside image
             {
@@ -287,6 +378,8 @@ public class DetailsActivity extends AppCompatActivity {
         imageView.setImageBitmap(rgba);
         cache_image = rgba;
         cache_code = "garbage";
+
+        return rgba;
     }
 
 
@@ -312,6 +405,70 @@ public class DetailsActivity extends AppCompatActivity {
             }
             return file.getAbsolutePath();
         }
+    }
+
+    /**
+     * @Description: 将图片、时间戳、识别结果发送到后台历史数据库中
+     * @Param: [yourSelectedImage, user_id, current_time, result]
+     * @return: void
+     * @Author: YAO
+     * @Date: 2022/4/28
+     */
+    public HttpUrl.Builder sendHistory(Bitmap yourSelectedImage, String user_id, String current_time, String result) {
+        byte[] pic_byte = getBitmapByte(yourSelectedImage);
+        String pic_string = pic_byte.toString();
+
+
+        HttpUrl.Builder httpBuilder = HttpUrl.parse(url_history).newBuilder();
+        httpBuilder.addQueryParameter("uid", "test6666");
+        httpBuilder.addQueryParameter("utime", current_time);
+        httpBuilder.addQueryParameter("ulable", result);
+        httpBuilder.addQueryParameter("pinfo", pic_string);
+
+
+        return httpBuilder;
+
+    }
+
+    public static String postHttp(history send_history) {
+        String responseData = null;
+        String body = com.alibaba.fastjson.JSONObject.toJSONString(send_history);
+        MediaType type = MediaType.parse("application/json;charset=utf-8");
+        RequestBody RequestBody2 = RequestBody.create(type, body);
+        try {
+            OkHttpClient client = new OkHttpClient();
+            Request request = new Request.Builder()
+                    // 指定访问的服务器地址
+                    .url(url_history).post(RequestBody2)
+                    .build();
+            Response response = client.newCall(request).execute();
+            responseData = response.body().string();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return responseData;
+    }
+
+
+    /**
+     * @Description: bitmap->byte[]
+     * @Param: [bitmap]
+     * @return: byte[]
+     * @Author: YAO
+     * @Date: 2022/4/28
+     */
+    public static byte[] getBitmapByte(Bitmap bitmap) {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        //参数1转换类型，参数2压缩质量，参数3字节流资源
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
+        try {
+            out.flush();
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return out.toByteArray();
     }
 
 }

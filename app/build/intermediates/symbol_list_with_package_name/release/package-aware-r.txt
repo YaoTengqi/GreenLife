@@ -1793,6 +1793,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable please_upload_image
 drawable recycle
 drawable side_nav_bar
 drawable test_custom_background
@@ -1865,6 +1866,8 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id active
+id active_code
 id activity_chooser_view_content
 id add
 id alertTitle
@@ -1912,6 +1915,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id collapseActionView
+id commit
 id confirm_button
 id container
 id content
@@ -1936,6 +1940,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id details_iv
+id details_rv
 id details_tv
 id dialog_button
 id dimensions
@@ -1956,6 +1961,7 @@ id easeInOut
 id easeOut
 id edit_query
 id elastic
+id email
 id end
 id endToStart
 id end_padder
@@ -2023,6 +2029,8 @@ id linear
 id listMode
 id list_item
 id login
+id logname
+id logpass
 id main_body
 id masked
 id material_clock_display
@@ -2079,6 +2087,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id nav_bottom
 id nav_controller_view_tag
 id nav_host_fragment_container
@@ -2107,7 +2116,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
-id password
+id passwd
 id password_toggle
 id path
 id pathRelative
@@ -2328,6 +2337,7 @@ layout abc_tooltip
 layout activity_details
 layout activity_login
 layout activity_main
+layout activity_regist
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2429,6 +2439,7 @@ layout text_view_without_line_height
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap icon
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

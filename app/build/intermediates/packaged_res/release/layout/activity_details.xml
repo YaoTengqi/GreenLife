@@ -9,7 +9,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp">
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/details_iv"
@@ -18,12 +20,25 @@
             android:layout_gravity="center"></ImageView>
     </LinearLayout>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/details_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"></androidx.recyclerview.widget.RecyclerView>
+    </androidx.cardview.widget.CardView>
+
     <TextView
         android:id="@+id/details_tv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:textSize="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="80dp"
+        android:textSize="30dp"
         android:textStyle="bold"></TextView>
 
 

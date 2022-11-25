@@ -1224,3 +1224,13 @@ repositories {
     url: "https://repo.maven.apache.org/maven2/"
   }
 }
+repositories {
+  maven_repo {
+    url: "https://jcenter.bintray.com/"
+  }
+}
+repositories {
+  maven_repo {
+    url: "https://oss.sonatype.org/content/repositories/snapshots"
+  }
+}
