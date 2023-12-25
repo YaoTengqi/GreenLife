@@ -18,8 +18,8 @@ android {
         versionName "1.0"
 
         ndk {
-            moduleName "ncnn"
-            abiFilters "armeabi-v7a", "arm64-v8a", 'armeabi-v7a', 'x86'
+            ndkVersion = "25.1.8937393"
+            abiFilters "arm64-v8a", 'armeabi-v7a', 'x86'
         }
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

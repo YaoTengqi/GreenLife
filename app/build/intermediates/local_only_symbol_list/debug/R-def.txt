@@ -31,9 +31,12 @@ drawable ic_menu_slideshow
 drawable ic_notifications_black_24dp
 drawable img
 drawable insect
+drawable nanodet
 drawable please_upload_image
 drawable recycle
 drawable side_nav_bar
+id Nanodet_btn
+id Nanodet_identify
 id active
 id active_code
 id check_btn
@@ -53,8 +56,6 @@ id history_time
 id hole_rv
 id id
 id imageview1
-id insect_btn
-id insect_identify
 id linear
 id login
 id logname
@@ -68,9 +69,9 @@ id navigation_notifications
 id passwd
 id post_context
 id post_img
+id post_img_Nanodet
 id post_img_check
 id post_img_garbage
-id post_img_insect
 id post_title
 id regist
 layout activity_details

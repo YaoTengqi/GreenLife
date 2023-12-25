@@ -68,8 +68,10 @@ public class DetailsActivity extends AppCompatActivity {
     private SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd/ HH:mm:ss", Locale.getDefault());//格式化时间戳
     private String result;
     private String user_id;
-
     private YoloV5Ncnn yolov5ncnn = new YoloV5Ncnn();
+    private NanoDet nanoDet = new NanoDet();
+    private int width;
+    private int height;
 
 
     static String url_history = "http://59.110.10.33:9999/upload";//发送识别历史的后端路径
@@ -117,13 +119,14 @@ public class DetailsActivity extends AppCompatActivity {
         //当选择的是垃圾分类识别时 ————> 调用YoloV5算法
         if ("garbage".equals(identifyCode)) {
 
-            boolean ret_init = yolov5ncnn.Init(getResources().getAssets());
+            boolean ret_init = YoloV5Ncnn.Init(getResources().getAssets());
+            YoloV5Ncnn.Init(getResources().getAssets());
             if (!ret_init) {
                 Log.e("MainActivity", "yolov5ncnn Init failed");
             }
 
 
-            YoloV5Ncnn.Obj[] objects = yolov5ncnn.Detect(yourSelectedImage, false);
+            YoloV5Ncnn.Obj[] objects = YoloV5Ncnn.Detect(yourSelectedImage, false);
 
             Log.d("YAO", String.valueOf(objects));
 
@@ -144,6 +147,45 @@ public class DetailsActivity extends AppCompatActivity {
                     history send_history = new history(pic_str, result, current_time, user_id);
                     Log.d("history_user_id", user_id);
                     Log.d("pic", result);
+                    String msg = postHttp(send_history);
+                    System.out.println(msg);
+                }
+            }).start();
+        }
+
+
+        //当选择的是Nanodet时 ————> 调用Nanodet算法
+        if ("nanodet".equals(identifyCode)) {
+
+            width = yourSelectedImage.getWidth();
+            height = yourSelectedImage.getHeight();
+            Bitmap bitmap = Bitmap.createBitmap(yourSelectedImage, 0, 0, Math.min(width, height), Math.min(width, height));
+            Bitmap mutableBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true);
+            nanoDet.init(getAssets(), false);
+
+            Box[] objects = null;
+
+            objects = nanoDet.detect(mutableBitmap, 0.3, 0.7);
+
+            Log.d("YAO", String.valueOf(objects));
+
+            history_bitmap = drawBoxRects(mutableBitmap, objects);
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    Matrix matrix = new Matrix();
+                    matrix.setScale(0.5f, 0.5f);//裁剪图片大小
+                    history_bitmap = Bitmap.createBitmap(history_bitmap, 0, 0, history_bitmap.getWidth(),
+                            history_bitmap.getHeight(), matrix, true);
+                    //将图片、时间戳、识别结果发送到后台历史数据库中
+                    byte[] pic_byte = getBitmapByte(history_bitmap);
+                    String pic_str = Base64.getEncoder().encodeToString(pic_byte);
+//                    byte[] pic_byte_after = Base64.getDecoder().decode(pic_str);
+//                    System.out.println(pic_byte_after.length);
+                    history send_history = new history(pic_str, result, current_time, user_id);
+//                    Log.d("history_user_id", user_id);
+//                    Log.d("pic", result);
                     String msg = postHttp(send_history);
                     System.out.println(msg);
                 }
@@ -241,8 +283,12 @@ public class DetailsActivity extends AppCompatActivity {
                 imageView.setImageDrawable(getResources().getDrawable(R.drawable.please_upload_image));
                 textView.setText("请先上传图片");
             } else if ("garbage".equals(cache_code)) {
-                YoloV5Ncnn.Obj[] objects = yolov5ncnn.Detect(cache_image, false);
+                YoloV5Ncnn.Obj[] objects = YoloV5Ncnn.Detect(cache_image, false);
                 showObjects(objects);
+
+            } else if ("nanodet".equals(cache_code)) {
+                Box[] objects = NanoDet.detect(cache_image, 0.3, 0.7);
+                drawBoxRects(cache_image, objects);
             } else {
                 imageView.setImageBitmap(cache_image);
             }
@@ -337,11 +383,13 @@ public class DetailsActivity extends AppCompatActivity {
             canvas.drawRect(objects[i].x, objects[i].y, objects[i].x + objects[i].w, objects[i].y + objects[i].h, paint);
 
             Bitmap new_bitmap = Bitmap.createBitmap(yourSelectedImage, (int) (objects[i].x), (int) (objects[i].y), (int) (objects[i].w), (int) (objects[i].h));
+
+            //-------将识别的每一个物体显示在下方recycleView中------//
             post post_identify = new post();
             String[] split = objects[i].label.split(":");
             post_identify.post_img = new_bitmap;
             post_identify.post_context = split[0] + "\n" + "准确率：" + String.format("%.1f", objects[i].prob * 100) + "%";
-            post_identify.post_title = split[0];
+            post_identify.post_title = split[1];
             if (i < objects.length - 1) {
                 if (i == 0) {
                     result = post_identify.post_title + ",";
@@ -355,6 +403,10 @@ public class DetailsActivity extends AppCompatActivity {
                     result += post_identify.post_title;
             }
             post_list.add(post_identify);
+
+
+            //-----------------------------------------------//
+
             // draw filled text inside image
             {
                 String text = objects[i].label + " = " + String.format("%.1f", objects[i].prob * 100) + "%";
@@ -380,6 +432,57 @@ public class DetailsActivity extends AppCompatActivity {
         cache_code = "garbage";
 
         return rgba;
+    }
+
+    protected Bitmap drawBoxRects(Bitmap mutableBitmap, Box[] results) {
+        if (results == null || results.length <= 0) {
+            return mutableBitmap;
+        }
+        Canvas canvas = new Canvas(mutableBitmap);
+        final Paint boxPaint = new Paint();
+        boxPaint.setAlpha(200);
+        boxPaint.setStyle(Paint.Style.STROKE);
+        boxPaint.setStrokeWidth(4 * mutableBitmap.getWidth() / 800.0f);
+        boxPaint.setTextSize(40 * mutableBitmap.getWidth() / 800.0f);
+        int i = 0;
+        for (Box box : results) {
+            Bitmap new_bitmap = Bitmap.createBitmap(yourSelectedImage, (int) (box.x0), (int) (box.y0), (int) (box.x1 - box.x0), (int) (box.y1 - box.y0));
+
+            boxPaint.setColor(box.getColor());
+            boxPaint.setStyle(Paint.Style.FILL);
+            canvas.drawText(box.getLabel() + String.format(Locale.CHINESE, " %.3f", box.getScore()), box.x0 + 3, box.y0 + 40 * mutableBitmap.getWidth() / 1000.0f, boxPaint);
+            boxPaint.setStyle(Paint.Style.STROKE);
+            canvas.drawRect(box.getRect(), boxPaint);
+
+            //-------将识别的每一个物体显示在下方recycleView中------//
+            post post_identify = new post();
+            String[] split = box.getLabel().split(":");
+            post_identify.post_img = new_bitmap;
+//            post_identify.post_context = split[1] + "\n" + "准确率：" + String.format("%.1f", box.getScore() * 100) + "%";
+            post_identify.post_context = "准确率：" + String.format("%.1f", box.getScore() * 100) + "%";
+            post_identify.post_title = split[0];
+            if (i < results.length - 1) {
+                if (i == 0) {
+                    result = post_identify.post_title + ",";
+                } else {
+                    result += post_identify.post_title + ",";
+                }
+            } else {
+                if (i == 0)
+                    result = post_identify.post_title;
+                else
+                    result += post_identify.post_title;
+            }
+            post_list.add(post_identify);
+        }
+
+
+        //-----------------------------------------------//
+
+        imageView.setImageBitmap(mutableBitmap);
+        cache_image = mutableBitmap;
+        cache_code = "nanoDet";
+        return mutableBitmap;
     }
 
 

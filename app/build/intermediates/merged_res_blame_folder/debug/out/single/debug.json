@@ -4,32 +4,16 @@
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\xml\\file_paths.xml"
     },
     {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_history.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\fragment_history.xml"
-    },
-    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_identify.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\button_identify.xml"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_edittext_border_identify.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\edittext_border_identify.xml"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_please_upload_image.png.flat",
@@ -38,14 +22,6 @@
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_tips.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\fragment_tips.xml"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_divider.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\divider.xml"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_gallery.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
     },
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home_black_24dp.xml.flat",
@@ -58,6 +34,86 @@
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_details.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_details.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_dustbin.png.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\dustbin.png"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_nanodet.png.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\nanodet.png"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_icon.jpg.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\icon.jpg"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_camera.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_regist.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_regist.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_main_border.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\button_main_border.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_side_nav_bar.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_identify.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\fragment_identify.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_img.png.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\img.png"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_history.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\fragment_history.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_divider.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\divider.xml"
+    },
+    {
+        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_gallery.xml.flat",
+        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
     },
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_img_dustbin.png.flat",
@@ -76,10 +132,6 @@
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\edittext_border.xml"
     },
     {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
@@ -88,32 +140,16 @@
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\button_border.xml"
     },
     {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_dustbin.png.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\dustbin.png"
-    },
-    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_edittext_border_tips.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\edittext_border_tips.xml"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_icon.jpg.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-hdpi\\icon.jpg"
     },
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_camera.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\ic_menu_camera.xml"
-    },
-    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_item_main.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\item_main.xml"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav_menu.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
     },
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
@@ -132,10 +168,6 @@
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\item_history.xml"
     },
     {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_regist.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_regist.xml"
-    },
-    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -144,40 +176,12 @@
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_main_border.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\button_main_border.xml"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_side_nav_bar.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_identify.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\fragment_identify.xml"
-    },
-    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_recycle.png.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\recycle.png"
     },
     {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_slideshow.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_img.png.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\img.png"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\layout\\activity_login.xml"
-    },
-    {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\drawable_insect.png.flat",
         "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\drawable\\insect.png"
-    },
-    {
-        "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\project\\GreenLife\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "D:\\project\\GreenLife\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",

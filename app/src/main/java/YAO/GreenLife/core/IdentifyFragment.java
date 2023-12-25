@@ -62,14 +62,15 @@ public class IdentifyFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         Button garbage_btn = (Button) getActivity().findViewById(R.id.garbage_btn);
-        Button insect_btn = (Button) getActivity().findViewById(R.id.insect_btn);
+        Button nanodet_btn = (Button) getActivity().findViewById(R.id.Nanodet_btn);
+//        Button insect_btn = (Button) getActivity().findViewById(R.id.insect_btn);
         Button check_btn = (Button) getActivity().findViewById(R.id.check_btn);
 
 
         garbage_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("LXX", "success");
+                Log.d("garbage_btn", "success");
                 Intent intent = new Intent();
                 identifyCode = "garbage";
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity())
@@ -97,19 +98,18 @@ public class IdentifyFragment extends Fragment {
 
         });
 
-        insect_btn.setOnClickListener(new View.OnClickListener() {
+        nanodet_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("LXX", "success");
+                Log.d("nanodet_btn", "success");
                 Intent intent = new Intent();
-                identifyCode = "insect";
+                identifyCode = "nanodet";
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity())
                         .setTitle("请选择图片上传方式")
                         .setPositiveButton("拍照", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 requestPermission_Camera();
-
                             }
                         })
 
@@ -118,6 +118,7 @@ public class IdentifyFragment extends Fragment {
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 Intent intent = new Intent(Intent.ACTION_PICK, null);
                                 intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
+                                intent.putExtra("requestCode", "2");
                                 startActivityForResult(intent, 2);
 
                             }
@@ -127,6 +128,37 @@ public class IdentifyFragment extends Fragment {
             }
 
         });
+
+//        insect_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Log.d("insect_btn", "success");
+//                Intent intent = new Intent();
+//                identifyCode = "insect";
+//                AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity())
+//                        .setTitle("请选择图片上传方式")
+//                        .setPositiveButton("拍照", new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialogInterface, int i) {
+//                                requestPermission_Camera();
+//
+//                            }
+//                        })
+//
+//                        .setNegativeButton("相册", new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialogInterface, int i) {
+//                                Intent intent = new Intent(Intent.ACTION_PICK, null);
+//                                intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
+//                                startActivityForResult(intent, 2);
+//
+//                            }
+//                        });
+//
+//                alertDialog.show();
+//            }
+//
+//        });
 
         check_btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1780,6 +1780,7 @@ drawable mtrl_navigation_bar_item_background
 drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
+drawable nanodet
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1806,6 +1807,8 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id Nanodet_btn
+id Nanodet_identify
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2011,8 +2014,6 @@ id ignoreRequest
 id image
 id imageview1
 id info
-id insect_btn
-id insect_identify
 id invisible
 id inward
 id italic
@@ -2127,9 +2128,9 @@ id position
 id postLayout
 id post_context
 id post_img
+id post_img_Nanodet
 id post_img_check
 id post_img_garbage
-id post_img_insect
 id post_title
 id progress_circular
 id progress_horizontal

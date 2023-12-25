@@ -25,6 +25,9 @@
 #include "layer.h"
 #include "net.h"
 #include "benchmark.h"
+#include "YoloV5.h"
+#include "YoloV4.h"
+#include "NanoDet.h"
 
 static ncnn::UnlockedPoolAllocator g_blob_pool_allocator;
 static ncnn::PoolAllocator g_workspace_pool_allocator;
@@ -96,7 +99,7 @@ static inline float intersection_area(const Object &a, const Object &b) {
     return inter_width * inter_height;
 }
 
-static void qsort_descent_inplace(std::vector <Object> &faceobjects, int left, int right) {
+static void qsort_descent_inplace(std::vector<Object> &faceobjects, int left, int right) {
     int i = left;
     int j = right;
     float p = faceobjects[(left + right) / 2].prob;
@@ -130,14 +133,14 @@ static void qsort_descent_inplace(std::vector <Object> &faceobjects, int left, i
     }
 }
 
-static void qsort_descent_inplace(std::vector <Object> &faceobjects) {
+static void qsort_descent_inplace(std::vector<Object> &faceobjects) {
     if (faceobjects.empty())
         return;
 
     qsort_descent_inplace(faceobjects, 0, faceobjects.size() - 1);
 }
 
-static void nms_sorted_bboxes(const std::vector <Object> &faceobjects, std::vector<int> &picked,
+static void nms_sorted_bboxes(const std::vector<Object> &faceobjects, std::vector<int> &picked,
                               float nms_threshold) {
     picked.clear();
 
@@ -174,7 +177,7 @@ static inline float sigmoid(float x) {
 
 static void generate_proposals(const ncnn::Mat &anchors, int stride, const ncnn::Mat &in_pad,
                                const ncnn::Mat &feat_blob, float prob_threshold,
-                               std::vector <Object> &objects) {
+                               std::vector<Object> &objects) {
     const int num_grid = feat_blob.h;
 
     int num_grid_x;
@@ -266,16 +269,22 @@ static jfieldID labelId;
 static jfieldID probId;
 
 JNIEXPORT jint
-JNI_OnLoad(JavaVM * vm , void *reserved )
-{
-__android_log_print(ANDROID_LOG_DEBUG, "YoloV5Ncnn" , "JNI_OnLoad" ) ;
+JNI_OnLoad(JavaVM *vm, void *reserved) {
+    __android_log_print(ANDROID_LOG_DEBUG, "YoloV5Ncnn", "JNI_OnLoad");
 
-ncnn::create_gpu_instance();
+    ncnn::create_gpu_instance();
+    if (ncnn::get_gpu_count() > 0) {
+        YoloV5::hasGPU = true;
+        YoloV4::hasGPU = true;
+        NanoDet::hasGPU = true;
+    }
+    return JNI_VERSION_1_6;
+    ncnn::create_gpu_instance();
 
-return JNI_VERSION_1_4;
+    return JNI_VERSION_1_4;
 }
 
-JNIEXPORT void JNI_OnUnload(JavaVM * vm, void * reserved) {
+JNIEXPORT void JNI_OnUnload(JavaVM *vm, void *reserved) {
     __android_log_print(ANDROID_LOG_DEBUG, "YoloV5Ncnn", "JNI_OnUnload");
 
     ncnn::destroy_gpu_instance();
@@ -383,7 +392,7 @@ JNICALL Java_YAO_GreenLife_core_YoloV5Ncnn_Detect(JNIEnv *env, jobject thiz, job
                            ncnn::BORDER_CONSTANT, 114.f);
 
     // yolov5
-    std::vector <Object> objects;
+    std::vector<Object> objects;
     {
         const float prob_threshold = 0.25f;
         const float nms_threshold = 0.45f;
@@ -397,7 +406,7 @@ JNICALL Java_YAO_GreenLife_core_YoloV5Ncnn_Detect(JNIEnv *env, jobject thiz, job
 
         ex.input("images", in_pad);
 
-        std::vector <Object> proposals;
+        std::vector<Object> proposals;
 
         // anchor setting from yolov5/models/yolov5s.yaml
 
@@ -414,7 +423,7 @@ JNICALL Java_YAO_GreenLife_core_YoloV5Ncnn_Detect(JNIEnv *env, jobject thiz, job
             anchors[4] = 33.f;
             anchors[5] = 23.f;
 
-            std::vector <Object> objects8;
+            std::vector<Object> objects8;
             generate_proposals(anchors, 8, in_pad, out, prob_threshold, objects8);
 
             proposals.insert(proposals.end(), objects8.begin(), objects8.end());
@@ -433,7 +442,7 @@ JNICALL Java_YAO_GreenLife_core_YoloV5Ncnn_Detect(JNIEnv *env, jobject thiz, job
             anchors[4] = 59.f;
             anchors[5] = 119.f;
 
-            std::vector <Object> objects16;
+            std::vector<Object> objects16;
             generate_proposals(anchors, 16, in_pad, out, prob_threshold, objects16);
 
             proposals.insert(proposals.end(), objects16.begin(), objects16.end());
@@ -452,7 +461,7 @@ JNICALL Java_YAO_GreenLife_core_YoloV5Ncnn_Detect(JNIEnv *env, jobject thiz, job
             anchors[4] = 373.f;
             anchors[5] = 326.f;
 
-            std::vector <Object> objects32;
+            std::vector<Object> objects32;
             generate_proposals(anchors, 32, in_pad, out, prob_threshold, objects32);
 
             proposals.insert(proposals.end(), objects32.begin(), objects32.end());

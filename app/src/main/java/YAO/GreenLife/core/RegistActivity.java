@@ -135,13 +135,10 @@ public class RegistActivity extends AppCompatActivity {
 
                         EditText acode_text = findViewById(R.id.active_code);
 
-
                         String acode = acode_text.getText().toString();
-
 
                         HttpUrl.Builder httpBuilder = HttpUrl.parse(url_active).newBuilder();
                         httpBuilder.addQueryParameter("acode", acode);
-
 
                         try {
                             Request request = new Request.Builder()

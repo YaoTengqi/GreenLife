@@ -38,7 +38,7 @@ public class HistoryFragment extends Fragment {
 
     static String url_user_history = "http://59.110.10.33:9999/search";//发送识别历史的后端路径
 
-    private YoloV5Ncnn yolov5ncnn = new YoloV5Ncnn();
+//    private YoloV5Ncnn yolov5ncnn = new YoloV5Ncnn();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
